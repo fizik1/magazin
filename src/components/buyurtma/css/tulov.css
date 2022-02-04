@@ -1,0 +1,127 @@
+.Tulov {
+  padding: 0 10%;
+}
+
+.Tulov h4 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.Tulov .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Tulov .row .image img {
+  height: 360px;
+}
+
+.Tulov .row .form {
+  width: 450px;
+}
+
+.Tulov .row .form form input {
+  width: 460px;
+  height: 58px;
+  background: #F1F1F1;
+  border: none;
+  outline: none;
+  padding: 16px;
+  margin-bottom: 25px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000;
+}
+
+.Tulov .row .form form input::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0A0A0A;
+}
+
+.Tulov .row .form form input:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0A0A0A;
+}
+
+.Tulov .row .form form input::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0A0A0A;
+}
+
+.Tulov .row .form form input::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0A0A0A;
+}
+
+.Tulov .row .form form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Tulov .row .form form label p {
+  margin-bottom: 12px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0A0A0A;
+}
+
+.Tulov .row .form form button {
+  width: 460px;
+  height: 58px;
+  background: #FFC000;
+  border: none;
+  outline: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+/*# sourceMappingURL=tulov.css.map */

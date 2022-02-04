@@ -1,0 +1,91 @@
+
+
+
+.Section3{
+    background-color: #F2F3F7;
+    padding: 67px 10%;
+    .title{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-bottom: 40px;
+    }
+    .items{
+        display: flex;
+        justify-content: start;
+        flex-flow: row wrap;
+        .item{
+            width: 250px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 98px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            margin: 0 0 20px 19px;
+            
+            .image{
+                img{
+                    width: 250px;
+                }
+            }
+            .about{
+                padding: 8px;
+                h4{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 140%;
+                    letter-spacing: 0.75px;
+                    text-transform: uppercase;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                }
+                p{
+                    font-family: Montserrat;
+                    margin: 5px 0;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    letter-spacing: 0.4px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                }
+                .price{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5px 0;
+                    img{
+                        height: 20px;
+                    }
+                    p{
+                        font-family: Montserrat;
+                        font-weight: bold;
+                        font-size: 10px;
+                        line-height: 140%;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        font-feature-settings: 'pnum' on, 'lnum' on;
+                    }
+                }
+                button{
+                    padding: 8px;
+                    border: none;
+                    background: #FFC000;
+                    border-radius: 6px;
+                    width: 100%;
+                    font-family: Montserrat;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    letter-spacing: 0.75px;
+                    text-transform: uppercase;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                }
+            }
+        }
+    }
+}

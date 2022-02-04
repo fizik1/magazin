@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap");
+.BizHaqimizda {
+  background-color: #fafafa;
+}
+
+.BizHaqimizda .asosiy {
+  padding: 0 10%;
+  margin-bottom: 50px;
+}
+
+.BizHaqimizda .asosiy h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.BizHaqimizda .asosiy .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+
+.BizHaqimizda .asosiy .contents .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 550px;
+}
+
+.BizHaqimizda .asosiy .contents .texts h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.BizHaqimizda .asosiy .contents .texts p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 170%;
+}
+
+.BizHaqimizda .asosiy .contents .image {
+  height: 400px;
+}
+
+.BizHaqimizda .asosiy .contents .image img {
+  height: 100%;
+}
+
+.BizHaqimizda .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 147px;
+  margin: 50px 0;
+}
+
+.BizHaqimizda .address .image {
+  width: 650px;
+}
+
+.BizHaqimizda .address .image img {
+  width: 100%;
+}
+
+.BizHaqimizda .address .contents {
+  max-width: 460px;
+}
+
+.BizHaqimizda .address .contents h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  margin-bottom: 50px;
+}
+
+.BizHaqimizda .address .contents .manzillar {
+  min-width: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px 160px;
+      grid-template-columns: 160px 160px;
+  grid-column-gap: 150px;
+  grid-row-gap: 50px;
+}
+
+.BizHaqimizda .address .contents .manzillar h5 {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.BizHaqimizda .address .contents .manzillar p {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+}
+/*# sourceMappingURL=bizhaqimizda.css.map */

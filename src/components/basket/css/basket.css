@@ -1,0 +1,82 @@
+.Basket {
+  padding: 0px 10%;
+  background-color: #FAFAFA;
+  margin-top: 50px;
+}
+
+.Basket .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.Basket .section .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Basket .section .total-price h5 {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-right: 20px;
+}
+
+.Basket .section .total-price p {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket .section .checkout button {
+  width: 376px;
+  height: 56px;
+  background: #FFC000;
+  border: none;
+  border-radius: 6px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket .similar .title {
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.Basket .similar .title h4 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket .similar .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=basket.css.map */

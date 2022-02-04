@@ -1,0 +1,73 @@
+.Section4 {
+  background-color: #F2F3F7;
+  padding: 67px 10%;
+}
+
+.Section4 .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 40px;
+}
+
+.Section4 .items {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.Section4 .items .item {
+  width: 250px;
+  position: relative;
+}
+
+.Section4 .items .item .image {
+  width: 100%;
+}
+
+.Section4 .items .item .image img {
+  width: 100%;
+}
+
+.Section4 .items .item .title {
+  background-color: #0d0d0d;
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.Section4 .items .item .title h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFC000;
+}
+/*# sourceMappingURL=kategoriyalar.css.map */

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap");
+.nav .bg-black {
+  padding: 0 10%;
+  height: 40px;
+  background-color: #0d0d0d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .bg-black .buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .bg-black .buttons button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+          box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+}
+
+.nav .navbar .nav1 {
+  color: #0D0D0D;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 140%;
+}
+
+.nav .navbar .nav2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .nav2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .nav2 ul li {
+  list-style: none;
+  margin-right: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.nav .navbar .nav3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -4px;
+}
+
+.nav .navbar .nav3 button {
+  padding: 3px 10px;
+  margin-left: 20px;
+}
+
+.nav .navbar .nav3 .kirish-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  margin-left: 80px;
+}
+
+.nav .navbar .nav3 .registr-btn {
+  background: #FFC000;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+}
+
+.nav .navbar .nav3 .basket-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.nav .navbar .nav3 .basket-btn img {
+  height: 24px;
+  position: relative;
+  top: 5px;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,33 @@
+.KategorySelect {
+  background-color: #fafafa;
+  padding: 20px 10%;
+}
+
+.KategorySelect .navlink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+.KategorySelect .asosiy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.KategorySelect .asosiy .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=kategoryselect.css.map */

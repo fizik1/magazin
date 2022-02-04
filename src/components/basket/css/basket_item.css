@@ -1,0 +1,166 @@
+.Basket_Item {
+  height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.Basket_Item button {
+  border: none;
+  background-color: transparent;
+}
+
+.Basket_Item .image {
+  height: 100%;
+}
+
+.Basket_Item .image img {
+  height: 100%;
+  border-radius: 12px;
+}
+
+.Basket_Item .contents {
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Basket_Item .contents .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Basket_Item .contents .one h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket_Item .contents .one button img {
+  height: 24px;
+}
+
+.Basket_Item .contents .two p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket_Item .contents .three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Basket_Item .contents .three .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Basket_Item .contents .three .section .price {
+  margin-right: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Basket_Item .contents .three .section .price p {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket_Item .contents .three .section .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Basket_Item .contents .three .section .size h6 {
+  margin-right: 15px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket_Item .contents .three .section .size p {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Basket_Item .contents .three .soni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  background-color: #f2f2f2;
+  height: 37px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Basket_Item .contents .three .soni button img {
+  height: 37px;
+}
+
+.Basket_Item .contents .three .soni .count {
+  width: 100px;
+  text-align: center;
+}
+
+.Basket_Item .contents .three .soni .count p {
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+/*# sourceMappingURL=basket_item.css.map */

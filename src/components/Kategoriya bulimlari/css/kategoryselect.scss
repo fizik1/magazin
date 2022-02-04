@@ -1,0 +1,23 @@
+
+
+
+.KategorySelect{
+    background-color: #fafafa;
+    padding: 20px 10%;
+    .navlink{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    .asosiy{
+        display: flex;
+        .items{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+}

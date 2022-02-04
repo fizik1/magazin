@@ -1,0 +1,21 @@
+
+
+
+.Kategoriyalar{
+    background-color: #fafafa;
+    padding: 0 10%;
+    h3{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        padding: 30px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 10px;
+    }
+}

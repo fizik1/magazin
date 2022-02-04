@@ -1,0 +1,114 @@
+.Section3 {
+  background-color: #F2F3F7;
+  padding: 67px 10%;
+}
+
+.Section3 .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 40px;
+}
+
+.Section3 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.Section3 .items .item {
+  width: 250px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 98px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 98px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 0 0 20px 19px;
+}
+
+.Section3 .items .item .image img {
+  width: 250px;
+}
+
+.Section3 .items .item .about {
+  padding: 8px;
+}
+
+.Section3 .items .item .about h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Section3 .items .item .about p {
+  font-family: Montserrat;
+  margin: 5px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Section3 .items .item .about .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 0;
+}
+
+.Section3 .items .item .about .price img {
+  height: 20px;
+}
+
+.Section3 .items .item .about .price p {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Section3 .items .item .about button {
+  padding: 8px;
+  border: none;
+  background: #FFC000;
+  border-radius: 6px;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+/*# sourceMappingURL=engyaxshi.css.map */

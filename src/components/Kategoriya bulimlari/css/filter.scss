@@ -1,0 +1,104 @@
+
+
+.filter{
+    width: 260px;
+    .title{
+        padding: 10px;
+        h4{
+            font-family: Montserrat;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 32px;
+        }
+    }
+    .accardion{
+        .item1{
+            border-top: 1px solid rgba(0, 0, 0, 0.301);
+            .item1{
+                .title{
+                    padding: 10px;
+                    h4{
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        line-height: 140%;
+                        cursor: pointer;
+                    }
+                }
+                .content{
+                    max-height: 0;
+                    overflow: hidden;
+                    transition-property: all;
+                    transition-delay: 0;
+                    .MuiBox-root{
+                        padding: 15px;
+                        padding-top: 30px;
+                        padding-bottom: 0;
+                    }
+                    .ot-do{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px;
+                        label{
+                            display: flex;
+                            flex-flow: column;
+                            font-family: Montserrat;
+                            font-weight: bold;
+                            font-size: 10px;
+                            line-height: 140%;
+                            input{
+                                width: 110px;
+                                height: 22px;
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px;
+                            padding-left: 20px;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+                            p{
+                                font-family: Montserrat;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 140%;
+                            }
+                            input::before{
+                                border: 1px solid rgba(0, 0, 0, 0.151);
+                            }
+                        }
+                    }
+                }
+                .show{
+                    height: auto;
+                    max-height: 9999px;
+                    transition-duration: 2s;
+                    transition-property: all;
+                    transition-delay: 0;
+                    
+    
+                }
+            }
+        }
+    }
+    .button{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.301);
+        padding: 15px;
+        button{
+            width: 232px;
+            font-family: Montserrat;
+            height: 40px;
+            background: #FFC000;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
