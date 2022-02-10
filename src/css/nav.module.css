@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap");
+.nav .bg_black {
+  padding: 0 10%;
+  height: 40px;
+  background-color: #0d0d0d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .bg_black .buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .bg_black .buttons button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 140%;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+          box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+}
+
+.nav .navbar .nav1 h1 {
+  color: #0D0D0D;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 140%;
+}
+
+.nav .navbar .nav1 button {
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.nav .navbar .nav1 img {
+  height: 46px;
+  display: none;
+}
+
+.nav .navbar .nav2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .nav2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .nav2 ul li {
+  list-style: none;
+  margin-right: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.nav .navbar .nav3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -4px;
+}
+
+.nav .navbar .nav3 button {
+  padding: 3px 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+}
+
+.nav .navbar .nav3 .kirish_btn {
+  background: rgba(0, 0, 0, 0.05);
+  margin-left: 80px;
+}
+
+.nav .navbar .nav3 .registr_btn {
+  background: #FFC000;
+  border: none;
+}
+
+.nav .navbar .nav3 .basket_btn {
+  border: none;
+  background-color: transparent;
+}
+
+.nav .navbar .nav3 .basket_btn img {
+  height: 24px;
+  position: relative;
+  top: 5px;
+}
+
+.nav .navbar .menu {
+  display: none;
+}
+
+.nav .navbar .none {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav .bg-black {
+    padding: 0 5%;
+    height: 30px;
+  }
+  .nav .navbar {
+    padding: 10px 5%;
+  }
+  .nav .navbar .nav1 h1 {
+    font-size: 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .navbar .nav2 ul li {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  .nav .navbar .nav3 button {
+    font-size: 13px;
+  }
+  .nav .navbar .nav3 .basket-btn img {
+    height: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav .bg-black {
+    display: none;
+  }
+  .nav .navbar {
+    position: relative;
+  }
+  .nav .navbar .nav1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .navbar .nav1 h1 {
+    display: none;
+  }
+  .nav .navbar .nav1 button {
+    display: block;
+  }
+  .nav .navbar .nav1 img {
+    display: block;
+  }
+  .nav .navbar .nav2 {
+    display: none;
+  }
+  .nav .navbar .nav3 .kirish-btn, .nav .navbar .nav3 .registr-btn {
+    display: none;
+  }
+  .nav .navbar .menu {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 36px;
+    width: 100%;
+  }
+  .nav .navbar .menu .close {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .nav .navbar .menu .close img {
+    height: 28px;
+  }
+  .nav .navbar .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-bottom: 220px;
+  }
+  .nav .navbar .menu ul li {
+    list-style: none;
+    margin-right: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+  }
+  .nav .navbar .menu button {
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    border: none;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #0D0D0D;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .nav .navbar .menu .kirish-btn {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .nav .navbar .menu .registr-btn {
+    background: #FFC000;
+  }
+  .nav .navbar .none {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav.module.css.map */

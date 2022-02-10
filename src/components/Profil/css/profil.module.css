@@ -1,0 +1,141 @@
+.Profil {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 10%;
+}
+
+.Profil .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 300px;
+}
+
+.Profil .row .image {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 263px;
+  margin-right: 130px;
+}
+
+.Profil .row .image img {
+  height: 263px;
+  margin-bottom: 16px;
+}
+
+.Profil .row .image button {
+  background: #FFC000;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 263px;
+  height: 40px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.Profil .row .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 700px;
+}
+
+.Profil .row .contents label {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-right: 120px;
+}
+
+.Profil .row .contents label input {
+  width: 264px;
+  height: 44px;
+  border: 1px solid #DBDEE7;
+  border-radius: 6px;
+  padding-left: 12px;
+  font-family: Open Sans;
+  font-size: 16px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  outline: none;
+}
+
+.Profil .row .contents label input::-webkit-input-placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.Profil .row .contents label input:-ms-input-placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.Profil .row .contents label input::-ms-input-placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.Profil .row .contents label input::placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.Profil .row .contents button {
+  border: none;
+  background-color: transparent;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFC000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+/*# sourceMappingURL=profil.module.css.map */

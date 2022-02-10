@@ -1,29 +1,61 @@
-import { Link } from "react-router-dom";
-import '../css/nav.css'
+import { Link, useNavigate } from "react-router-dom";
+import css from '../css/nav.module.css'
+import 'boxicons'
+import { useState } from 'react'
+import { useSelector } from "react-redux";
 
 function Nav(){
+    const navigate = useNavigate()
+    const state = useSelector(state=>state)
+    const [sstate, setsstate] = useState(true);
+    const handlerMenuClose=()=>{
+        setsstate(true)
+        console.log("salom");
+    }
+    const navBasket = ()=>{
+        if(state.basket.length==0){
+            navigate("/NoBasket")
+        }else navigate('/Basket')
+    }
+    console.log(state.basket.length);
     return(
-        <div className="nav">
-            <div className="bg-black">
-                <div className='buttons'>
+        <div className={css.nav}>
+            <div className={css.bg_black}>
+                <div className={css.buttons}>
                     <button>RU</button>
                     <button>UZB</button>
                 </div>
             </div>
-            <div className="navbar">
-                <div className="nav1">MILANDI</div>
-                <div className='nav2'>
+            <div className={css.navbar}>
+                <div className={css.nav1}>
+                    <h1>MILANDI</h1>
+                    <button onClick={()=>{setsstate(false)}}><box-icon name='menu'></box-icon></button>
+                    <img src="/imgs/logo.png"/>
+                    </div>
+                <div className={css.nav2}>
                     <ul>
-                        <li><Link to="/">Главная</Link></li>
-                        <li><Link to="/BizHaqimizda">О нас</Link></li>
-                        <li><Link to="/Kategoriyalar">Категории</Link></li>
-                        <li><Link to="/Hamkorlik">Сотрудничество</Link></li>
+                        <li onClick={handlerMenuClose}><Link to="/" >Главная</Link></li>
+                        <li><Link to="/AboutUs" >О нас</Link></li>
+                        <li><Link to="/Categorys" >Категории</Link></li>
+                        <li><Link to="/Cooperation" >Сотрудничество</Link></li>
                     </ul>
                 </div>
-                <div className="nav3">
-                    <button className='kirish-btn'>Войти</button>
-                    <button className='registr-btn'>Зарегистрироваться</button>
-                    <Link to="/basket"><button className='basket-btn'><img src="icons/basket.png" alt="" /></button></Link>
+                <div className={css.nav3}>
+                    <Link to="/Login"><button className={css.kirish_btn}>Войти</button></Link>
+                    <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>
+                    <button className={css.basket_btn} onClick={navBasket}><img src="icons/basket.png" alt="" /></button>
+                </div>
+                <div className={sstate?css.none:css.menu}>
+                    <button className={css.close} onClick={handlerMenuClose}><img src="/icons/close.png"/></button>
+                    <ul>
+                        <li><Link to="/">Главная</Link></li>
+                        <li><Link to="/AboutUs">О нас</Link></li>
+                        <li><Link to="/Categorys">Категории</Link></li>
+                        <li><Link to="/Cooperation">Сотрудничество</Link></li>
+                    </ul>
+                    <Link to="/Login"><button className={css.kirish_btn}>Войти</button></Link>
+                    <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>
+
                 </div>
             </div>
         </div>

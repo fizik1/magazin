@@ -1,0 +1,25 @@
+
+
+
+.Section3{
+    background-color: transparent;
+    padding: 0;
+    .title{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        margin-bottom: 40px;
+    }
+    .items{
+        display: flex;
+        flex-flow: row wrap;
+        // margin: auto;
+        justify-content: start !important;
+
+    }
+}

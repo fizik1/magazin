@@ -1,0 +1,102 @@
+
+
+
+.Hamkorlik{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        .texts{
+            width: 550px;
+            .title{
+                margin-bottom: 72px;
+                h4{
+                    font-family: Montserrat;
+                    font-weight: 900;
+                    font-size: 46px;
+                    line-height: 64px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    
+                }
+            }
+            .phone, .address{
+                .text1{
+                    font-family: Inter;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 34px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                }
+                .text2{
+                    font-family: Inter;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    margin-bottom: 44px;
+                }
+            }
+        }
+        .form{
+            width: 550px;
+            form{
+                display: flex;
+                flex-flow: column;
+                input{
+                    border: 1px solid #DBDEE7;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    height: 60px;
+                    padding-left: 24px;
+                    margin-bottom: 16px;
+                    outline: none;
+                    font-family: Inter;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    &::placeholder{
+                        font-family: Inter;
+                        font-size: 18px;
+                        line-height: 32px;
+                        font-feature-settings: 'pnum' on, 'lnum' on;
+                    }
+                }
+                textarea{
+                    border: 1px solid #DBDEE7;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    height: 132px;
+                    padding-left: 24px;
+                    padding-top: 15px;
+                    margin-bottom: 16px;
+                    font-family: Inter;
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    outline: none;
+                    &::placeholder{
+                        font-family: Inter;
+                        font-size: 18px;
+                        line-height: 32px;
+                        font-feature-settings: 'pnum' on, 'lnum' on;
+                    }
+                }
+                button{
+                    width: 260px;
+                    height: 60px;
+                    background: #FFC000;
+                    border-radius: 6px;
+                    font-family: Inter;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #0D0D0D;
+                    border: navajowhite;
+                }
+            }
+        }
+    }
+}

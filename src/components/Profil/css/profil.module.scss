@@ -1,0 +1,87 @@
+
+
+.Profil{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    height: fit-content;
+    padding: 0 10%;
+    .row{
+        display: flex;
+        justify-content: start;
+        height: 300px;
+        
+        .image{
+            height: fit-content;
+            width: 263px;
+            margin-right: 130px;
+            img{
+                height: 263px;
+                margin-bottom: 16px;
+            }
+            button{
+                background: #FFC000;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                width: 263px;
+                height: 40px;
+                font-family: Inter;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 140%;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #0D0D0D;
+            }
+        }
+        .contents{
+            display: flex;
+            flex-flow: column wrap;
+            width: 700px;
+            label{
+                font-family: Open Sans;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                display: flex;
+                flex-flow: column;
+                margin-right: 120px;
+
+                input{
+                    width: 264px;
+                    height: 44px;
+                    border: 1px solid #DBDEE7;
+                    border-radius: 6px;
+                    padding-left: 12px;
+                    font-family: Open Sans;
+                    font-size: 16px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #0D0D0D;
+                    margin-bottom: 16px;
+                    margin-top: 8px;
+                    outline: none;
+                    &::placeholder{
+                        font-family: Open Sans;
+                        font-size: 16px;
+                        font-feature-settings: 'pnum' on, 'lnum' on;
+                        color: #0D0D0D;
+                    }
+                }
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0.4px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FFC000;
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+
+    }
+}

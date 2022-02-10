@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap');
+
+.nav{
+    .bg_black{
+        padding: 0 10%;
+        height: 40px;
+        background-color: #0d0d0d;
+        align-items: center;
+        .buttons{
+            align-items: center;
+            button{
+                align-items: center;
+                background-color: transparent;
+                border: none;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 140%;
+                color: #fff;
+                margin-left: 10px;
+            }
+        }
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10%;
+        align-items: center;
+        background: #FAFAFA;
+        box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+        .nav1{
+            h1{
+                color: #0D0D0D;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 23px;
+                line-height: 140%;
+            }
+            button{
+                height: 28px;
+                border: none;
+                background-color: transparent;
+                display: none;
+            }
+            img{
+                height: 46px;
+                display: none;
+            }
+
+        }
+        .nav2{
+            align-items: center;
+            ul{
+                display: flex;
+                align-items: center;
+
+                li{
+                    list-style: none;
+                    margin-right: 25px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+
+                }
+            }
+        }
+        .nav3{
+            align-items: center;
+            position: relative;
+            top: -4px;
+            button{
+                padding: 3px 10px;
+                margin-left: 20px;
+                border-radius: 4px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                border: none;
+            }
+            .kirish_btn{
+                background: rgba(0, 0, 0, 0.05);
+                margin-left: 80px;
+            }
+            .registr_btn{
+                background: #FFC000;
+                border: none;
+
+            }
+            .basket_btn{
+                border: none;
+                background-color: transparent;
+                img{
+                    height: 24px;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+        .menu{
+            display: none;
+        }
+        .none{
+            display: none;
+        }
+
+    }
+}
+
+// Responsive
+
+@media (max-width:1200px){
+    .nav{
+        .bg-black{
+            padding: 0 5%;
+            height: 30px;
+
+        }
+        .navbar{
+            
+            padding: 10px 5%;
+            .nav1{
+                h1{
+                    font-size: 18px;
+                    align-items: center;
+                }
+            }
+            .nav2{
+                ul{
+                    li{
+                        font-size: 12px;
+                        margin-left: 20px;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .nav3{
+                button{
+                    font-size:13px
+                }
+                .basket-btn{
+                    img{
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px){
+    .nav{
+        .bg-black{
+            display: none;
+        }
+        .navbar{
+            position: relative;
+            .nav1{
+                display: flex;
+                align-items: center;
+                h1{
+                    display: none;
+                }
+                button{
+                    display: block;
+                }
+                img{
+                    display: block;
+                }
+            }
+            .nav2{
+                display: none;
+            }
+            .nav3{
+                .kirish-btn, .registr-btn{
+                    display: none;
+                }
+            }
+            .menu{
+                display: block;
+                position: fixed;
+                z-index: 3;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-flow: column;
+                padding: 36px;
+                width: 100%;
+                .close{
+                    border: none;
+                    background-color: transparent;
+                    width:100%;
+                    display: flex;
+                    justify-content: end;
+                    height: fit-content;
+                    img{
+                        height: 28px;
+                    }
+
+                }
+                ul{
+                    display: flex;
+                    flex-flow: column;
+                    margin-bottom: 220px;
+                    li{
+                        list-style: none;
+                        margin-right: 25px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 140%;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 140%;
+                        font-feature-settings: 'pnum' on, 'lnum' on;
+                        color: #000000;
+                    }
+                }
+                button{
+                    padding: 3px 10px;
+                    border-radius: 4px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 140%;
+                    border: none;
+                    font-family: Inter;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #0D0D0D;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+                .kirish-btn{
+                    background: rgba(0, 0, 0, 0.05);
+                }
+                .registr-btn{
+                    background: #FFC000;
+                }
+
+            }
+            .none{
+                display: none;
+            }
+        }
+    }
+}

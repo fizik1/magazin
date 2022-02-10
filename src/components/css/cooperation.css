@@ -1,0 +1,173 @@
+.Hamkorlik {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 0 10%;
+}
+
+.Hamkorlik .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Hamkorlik .row .texts {
+  width: 550px;
+}
+
+.Hamkorlik .row .texts .title {
+  margin-bottom: 72px;
+}
+
+.Hamkorlik .row .texts .title h4 {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 64px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .texts .phone .text1, .Hamkorlik .row .texts .address .text1 {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .texts .phone .text2, .Hamkorlik .row .texts .address .text2 {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 44px;
+}
+
+.Hamkorlik .row .form {
+  width: 550px;
+}
+
+.Hamkorlik .row .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Hamkorlik .row .form form input {
+  border: 1px solid #DBDEE7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  outline: none;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form input::-webkit-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form input:-ms-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form input::-ms-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form input::placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form textarea {
+  border: 1px solid #DBDEE7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  height: 132px;
+  padding-left: 24px;
+  padding-top: 15px;
+  margin-bottom: 16px;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  outline: none;
+}
+
+.Hamkorlik .row .form form textarea::-webkit-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form textarea:-ms-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form textarea::-ms-input-placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form textarea::placeholder {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 32px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.Hamkorlik .row .form form button {
+  width: 260px;
+  height: 60px;
+  background: #FFC000;
+  border-radius: 6px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+  border: navajowhite;
+}
+/*# sourceMappingURL=cooperation.css.map */

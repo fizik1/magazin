@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.Login {
+  margin-top: 50px;
+  padding: 0 5%;
+}
+
+.Login .title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 64px;
+}
+
+.Login .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.Login .row .image img {
+  height: 390px;
+}
+
+.Login .row .contents {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Login .row .contents form {
+  width: 530px;
+}
+
+.Login .row .contents form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #DBDEE7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 16px;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+  padding-left: 15px;
+}
+
+.Login .row .contents form label {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Login .row .contents form button {
+  width: 260px;
+  height: 60px;
+  background: #FFC000;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+/*# sourceMappingURL=login.module.css.map */

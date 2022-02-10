@@ -1,24 +1,24 @@
-import '../css/footer.css'
+import css from '../css/footer.module.css'
 
 function Footer(){
     return(
-        <div className='footer'>
-            <div className='foot1'>
+        <div className={css.footer}>
+            <div className={css.foot1}>
                 <h4>PRO IMPERIA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget pretium aenean dignissim sit cursus dictumst adipiscing nunc.</p>
-                <div className='logo'>
+                <div className={css.logo}>
                     <img src="imgs/logo.png" alt="" />
                 </div>
             </div>
-            <div className='foot2'>
-                <div className='foot21'>
+            <div className={css.foot2}>
+                <div className={css.foot21}>
                     <h4>контакты</h4>
                     <ul>
                         <li>+998 90 958 78 87</li>
                         <li>support@fonon.uz</li>
                     </ul>
                 </div>
-                <div className='foot22'>
+                <div className={css.foot22}>
                     <h4>рабочее время</h4>
                     <ul>
                         <li>По будням 9:00 to 18:00</li>
@@ -26,7 +26,7 @@ function Footer(){
                     </ul>
                 </div>
             </div>
-            <div className='foot3'>
+            <div className={css.foot3}>
                 <h4>Меню</h4>
                 <ul>
                     <li>Главная</li>
@@ -35,7 +35,7 @@ function Footer(){
                     <li>Сотрудничество</li>
                 </ul>
             </div>
-            <div className='foot4'>
+            <div className={css.foot4}>
                 <h4>категории</h4>
                 <ul>
                     <li>Женская одежда</li>

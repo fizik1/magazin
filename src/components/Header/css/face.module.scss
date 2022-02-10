@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,700&display=swap");
+
+.Header{
+    .Section1{
+        height: 780px;
+        align-items: center;
+        display: flex;
+        position: relative;
+        background: linear-gradient(99.05deg, #E1AA00 0%, #FFC000 74.72%);
+        .bg_black{
+            background-color: #000;
+            padding: 30px 10%;
+            .items{
+                width: 55%;
+                justify-content: start;
+                h3{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 34px;
+                    line-height: 140%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.25px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #fff;
+                    
+                }
+                p{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.1px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #FFFFFF;
+                    margin: 30px 0;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                    img{
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        > img{
+            height: 100%;
+            position: absolute;
+            right: 5%;
+        }
+    
+    }
+    .Section2{
+        display: none;
+        margin: 0;
+        padding: 0;
+        .bg_white{
+            background-color: transparent;
+            padding: 30px 10%;
+            .items{
+                width: 100%;
+                display: block;
+                justify-content: start;
+                h3{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 34px;
+                    line-height: 140%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.25px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #0d0d0d;
+                    
+                }
+                p{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.1px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                    color: #0d0d0d;
+                    margin: 30px 0;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                    img{
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .Header{
+        .Section1{
+            height: 600px;
+            .bg-black{
+                padding: 25px 5%;
+                .items{
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    .button{
+                        img{
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+            > img{
+                right: 2%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px){
+    .Header{
+        .Section1{
+            flex-flow: column-reverse;
+            position: relative;
+            .bg-black{
+                display: none;
+            }
+            >img{
+                position: relative;
+                top: 0;
+                right: 0;
+                height: 90%;
+                margin-left: 20%;
+            }
+        }
+        .Section2{
+            display: block;
+            .bg-white{
+                padding: 30px 5%;
+                .items{
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    button{
+                        img{
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media (max-width:500px){
+    .Header{
+        .Section1{
+            height: 550px;
+            > img{
+                width: 80%;
+                height: auto;
+            }
+        }
+        .Section2{
+            .bg-white{
+                .items{
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:375px){
+    .Header{
+        .Section1{
+            height: 500px;
+            > img{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}
