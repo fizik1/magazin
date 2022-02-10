@@ -60,4 +60,110 @@
 .footer .foot1 .logo img {
   height: 96px;
 }
+
+.footer .adaptiv {
+  max-width: 100%;
+  display: none;
+}
+
+.footer .adaptiv h5 {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 30px;
+}
+
+.footer .adaptiv ul {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.footer .adaptiv ul li {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  margin: 5px 25px;
+}
+
+.footer .adaptiv .address div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 17px 0;
+}
+
+.footer .adaptiv .address div img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.footer .adaptiv .address div p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.footer .adaptiv .address div .icon {
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 46px 5%;
+  }
+  .footer ul li {
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+  .footer h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer ul li {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .footer h4 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .footer .foot1 p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer .foot1, .footer .foot2, .footer .foot3, .footer .foot4 {
+    display: none;
+  }
+  .footer ul li {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .footer h4 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .footer .foot1 p {
+    font-size: 11px;
+  }
+  .footer .adaptiv {
+    display: block;
+  }
+}
 /*# sourceMappingURL=footer.module.css.map */

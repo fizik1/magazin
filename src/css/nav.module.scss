@@ -117,7 +117,7 @@
 
 @media (max-width:1200px){
     .nav{
-        .bg-black{
+        .bg_black{
             padding: 0 5%;
             height: 30px;
 
@@ -157,7 +157,7 @@
 
 @media (max-width:960px){
     .nav{
-        .bg-black{
+        .bg_black{
             display: none;
         }
         .navbar{
@@ -179,7 +179,7 @@
                 display: none;
             }
             .nav3{
-                .kirish-btn, .registr-btn{
+                .kirish_btn, .registr_btn{
                     display: none;
                 }
             }
@@ -246,10 +246,10 @@
                     width: 100%;
                     margin-bottom: 8px;
                 }
-                .kirish-btn{
+                .kirish_btn{
                     background: rgba(0, 0, 0, 0.05);
                 }
-                .registr-btn{
+                .registr_btn{
                     background: #FFC000;
                 }
 

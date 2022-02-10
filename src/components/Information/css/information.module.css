@@ -6,7 +6,8 @@
 }
 
 .xaridqilish img {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .xaridqilish .contents {
@@ -54,5 +55,15 @@
           font-feature-settings: 'pnum' on, 'lnum' on;
   border: none;
   padding: 8px 23px;
+}
+
+@media (max-width: 1200px) {
+  .xaridqilish {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
 }
 /*# sourceMappingURL=Information.module.css.map */

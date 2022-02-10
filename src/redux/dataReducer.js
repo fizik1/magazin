@@ -33,19 +33,19 @@ const defaultState = {
       ],
       categorys:[
         {
-            img:"/imgs/kategoriya.png",
+            img:"/imgs/kategoriya1.png",
             kategoriya: 'Women’s wear'
         },
         {
-            img:"/imgs/kategoriya.png",
+            img:"/imgs/kategoriya2.png",
             kategoriya: 'Women’s wear'
         },
         {
-            img:"/imgs/kategoriya.png",
+            img:"/imgs/kategoriya3.png",
             kategoriya: 'Women’s wear'
         },
         {
-            img:"/imgs/kategoriya.png",
+            img:"/imgs/kategoriya4.png",
             kategoriya: 'Women’s wear'
         },
         

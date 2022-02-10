@@ -142,7 +142,7 @@
 }
 
 @media (max-width: 1200px) {
-  .nav .bg-black {
+  .nav .bg_black {
     padding: 0 5%;
     height: 30px;
   }
@@ -169,7 +169,7 @@
 }
 
 @media (max-width: 960px) {
-  .nav .bg-black {
+  .nav .bg_black {
     display: none;
   }
   .nav .navbar {
@@ -195,7 +195,7 @@
   .nav .navbar .nav2 {
     display: none;
   }
-  .nav .navbar .nav3 .kirish-btn, .nav .navbar .nav3 .registr-btn {
+  .nav .navbar .nav3 .kirish_btn, .nav .navbar .nav3 .registr_btn {
     display: none;
   }
   .nav .navbar .menu {
@@ -279,10 +279,10 @@
     width: 100%;
     margin-bottom: 8px;
   }
-  .nav .navbar .menu .kirish-btn {
+  .nav .navbar .menu .kirish_btn {
     background: rgba(0, 0, 0, 0.05);
   }
-  .nav .navbar .menu .registr-btn {
+  .nav .navbar .menu .registr_btn {
     background: #FFC000;
   }
   .nav .navbar .none {

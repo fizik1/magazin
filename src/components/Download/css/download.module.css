@@ -22,6 +22,7 @@
 
 .Section5 .blue > img {
   height: 500px;
+  width: auto;
   position: relative;
   top: -175px;
 }
@@ -70,5 +71,29 @@
 .Section5 .blue .items .buttons button img {
   height: 45px;
   border-radius: 6px;
+}
+
+@media (max-width: 1056px) {
+  .Section5 {
+    height: 100%;
+  }
+  .Section5 .blue {
+    padding: 0 5%;
+    height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Section5 .blue > img {
+    top: -100px;
+    height: auto;
+    width: 50%;
+  }
+  .Section5 .blue .items {
+    padding: 0;
+    position: relative;
+    top: -40px;
+  }
 }
 /*# sourceMappingURL=download.module.css.map */

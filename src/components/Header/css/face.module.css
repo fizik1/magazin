@@ -145,16 +145,16 @@
   .Header .Section1 {
     height: 600px;
   }
-  .Header .Section1 .bg-black {
+  .Header .Section1 .bg_black {
     padding: 25px 5%;
   }
-  .Header .Section1 .bg-black .items h3 {
+  .Header .Section1 .bg_black .items h3 {
     font-size: 30px;
   }
-  .Header .Section1 .bg-black .items p {
+  .Header .Section1 .bg_black .items p {
     font-size: 12px;
   }
-  .Header .Section1 .bg-black .items .button img {
+  .Header .Section1 .bg_black .items .button img {
     height: 17px;
   }
   .Header .Section1 > img {
@@ -170,7 +170,7 @@
             flex-flow: column-reverse;
     position: relative;
   }
-  .Header .Section1 .bg-black {
+  .Header .Section1 .bg_black {
     display: none;
   }
   .Header .Section1 > img {
@@ -183,16 +183,16 @@
   .Header .Section2 {
     display: block;
   }
-  .Header .Section2 .bg-white {
+  .Header .Section2 .bg_white {
     padding: 30px 5%;
   }
-  .Header .Section2 .bg-white .items h3 {
+  .Header .Section2 .bg_white .items h3 {
     font-size: 30px;
   }
-  .Header .Section2 .bg-white .items p {
+  .Header .Section2 .bg_white .items p {
     font-size: 12px;
   }
-  .Header .Section2 .bg-white .items button img {
+  .Header .Section2 .bg_white .items button img {
     height: 17px;
   }
 }
@@ -205,7 +205,7 @@
     width: 80%;
     height: auto;
   }
-  .Header .Section2 .bg-white .items h3 {
+  .Header .Section2 .bg_white .items h3 {
     font-size: 20px;
   }
 }

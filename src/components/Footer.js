@@ -46,6 +46,28 @@ function Footer(){
                     <li>Аксесуары</li>
                 </ul>
             </div>
+            <div className={css.adaptiv}>
+                <h5>High fidelity wireframes include more real content, specific typography choices, and information on image.</h5>
+                <ul>
+                    <li>Catalog</li>
+                    <li>About</li>
+                    <li>Popular</li>
+                    <li>Blog</li>
+                    <li>Pricing</li>
+                    <li>Contacts</li>
+                    <li>Features</li>
+                </ul>
+                <div className={css.address}>
+                    <div>
+                        <img src='/icons/address.png'/>
+                        <p>Los Angeles, 359  Hidden Valley Road</p>
+                    </div>
+                    <div>
+                    <img className={css.icon} src='/icons/massage.png'/>
+                        <p>Hellohero@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -5,7 +5,6 @@
     margin-top: 80px;
     padding: 46px 10%;
     background-color: #fff;
-    
     display: flex;
     justify-content: space-between;
     > div{
@@ -55,5 +54,115 @@
             }
         }
     }
+    .adaptiv{
+        max-width: 100%;
+        display: none;
+        h5{
+            font-family: Inter;
+            font-size: 16px;
+            line-height: 24px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            margin-bottom: 30px;
 
+        }
+        ul{
+            margin-bottom: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            li{
+                font-family: Inter;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 34px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                margin:5px 25px;
+
+            }
+        }
+        .address{
+            div{
+                display: flex;
+                margin: 17px 0;
+                img{
+                    height: 30px;
+                    margin-right: 20px;
+                }
+                p{
+                    font-family: Inter;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
+                }
+                .icon{
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+// Responsive
+
+@media (max-width:1200px){
+    .footer{
+        padding: 46px 5%;
+
+        ul{
+            li{
+                font-size: 12px;
+                margin-bottom: 13px;
+            }
+        }
+        h4{
+            font-size:12px
+        }
+    }
+}
+
+
+@media (max-width:960px){
+    .footer{
+        ul{
+            li{
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
+        }
+        h4{
+            font-size:12px;
+            margin-top:15px;
+        }
+        .foot1{
+            p{
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media (max-width:560px){
+    
+    .footer{
+        .foot1, .foot2, .foot3, .foot4{
+            display: none;
+        }
+        ul{
+            li{
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
+        }
+        h4{
+            font-size:12px;
+            margin-top:15px;
+        }
+        .foot1{
+            p{
+                font-size: 11px;
+            }
+        }
+        .adaptiv{
+            display: block;
+        }
+    }
 }

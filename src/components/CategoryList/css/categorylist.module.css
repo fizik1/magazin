@@ -14,20 +14,53 @@
 }
 
 .Kategoriyalar .cards {
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
 }
 
 .Kategoriyalar .cards .kategpriya {
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .Kategoriyalar .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    max-width: 100vw;
+    overflow-x: scroll;
+    cursor: -webkit-grab;
+    cursor: grab;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .Kategoriyalar .cards::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .Kategoriyalar .cards::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+            box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+  }
+  .Kategoriyalar .cards::-webkit-scrollbar-thumb {
+    background: #282364;
+    border-radius: 10px;
+  }
+  .Kategoriyalar .cards::-webkit-scrollbar-thumb:hover {
+    background: #0F0D2B;
+  }
+  .Kategoriyalar .cards:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
 }
 /*# sourceMappingURL=categorylist.module.css.map */

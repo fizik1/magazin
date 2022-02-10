@@ -5,7 +5,8 @@
     height: 400px;
     display: flex;
     img{
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
     .contents{
         padding: 60px 30px;
@@ -46,5 +47,13 @@
             border: none;
             padding: 8px 23px;
         }
+    }
+}
+
+
+@media (max-width:1200px){
+    .xaridqilish{
+        height: auto;
+        flex-flow: column;
     }
 }

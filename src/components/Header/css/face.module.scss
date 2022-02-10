@@ -109,7 +109,7 @@
     .Header{
         .Section1{
             height: 600px;
-            .bg-black{
+            .bg_black{
                 padding: 25px 5%;
                 .items{
                     h3{
@@ -138,7 +138,7 @@
         .Section1{
             flex-flow: column-reverse;
             position: relative;
-            .bg-black{
+            .bg_black{
                 display: none;
             }
             >img{
@@ -151,7 +151,7 @@
         }
         .Section2{
             display: block;
-            .bg-white{
+            .bg_white{
                 padding: 30px 5%;
                 .items{
                     h3{
@@ -182,7 +182,7 @@
             }
         }
         .Section2{
-            .bg-white{
+            .bg_white{
                 .items{
                     h3{
                         font-size: 20px;
