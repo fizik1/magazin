@@ -1,0 +1,39 @@
+
+
+.CategoryMenu{
+    margin: auto;
+    h3{
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.25px;
+        padding: 30px;
+    }
+    .cards{
+        width: fit-content !important;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 20px;
+        justify-content: start !important;
+        margin: auto;
+    }
+}
+
+
+@media (max-width:760px){
+    .CategoryMenu{
+        .cards{
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
+@media (max-width:540px){
+    .CategoryMenu{
+        .cards{
+            grid-template-columns: auto auto;
+        }
+    }
+}

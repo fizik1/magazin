@@ -17,10 +17,10 @@ function Filter(){
     }
     return(
         <div className={css.filter}>
-            <div className={css.title}>
+            <div className={css.title} onClick={()=>toogle(10)}>
                 <h4>Filter</h4>
             </div>
-            <div className={css.accardion}>
+            <div className={ selected!=10 ? css.accardion : css.accardionShow}>
                 <div className={css.item1}>
                     <div className={css.item1}>
                         <div className={css.title} onClick={()=>toogle(1)}>
@@ -58,11 +58,6 @@ function Filter(){
                                 <li><p>Kid’s wear</p> <input type="checkbox" /></li>
                                 <li><p>Shoes</p> <input type="checkbox" /></li>
                                 <li><p>Сумки</p> <input type="checkbox" /></li>
-                                <li><p>Accessories</p> <input type="checkbox" /></li>
-                                <li><p>Underwear</p> <input type="checkbox" /></li>
-                                <li><p>Decorations</p> <input type="checkbox" /></li>
-                                <li><p>Home textiles</p> <input type="checkbox" /></li>
-                                <li><p>Wholesale</p> <input type="checkbox" /></li>
                             </ul>
                         </div>
                     </div>

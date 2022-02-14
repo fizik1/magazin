@@ -14,10 +14,27 @@
     }
     .asosiy{
         display: flex;
+        justify-content: space-around;
+        position: relative;
         .items{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
+        }
+    }
+}
+
+
+@media (max-width:1350px){
+    .KategorySelect{
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width:900px){
+    .KategorySelect{
+        .asosiy{
+            flex-flow: column;
         }
     }
 }

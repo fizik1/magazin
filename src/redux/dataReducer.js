@@ -38,7 +38,7 @@ const defaultState = {
         },
         {
             img:"/imgs/kategoriya2.png",
-            kategoriya: 'Women’s wear'
+            kategoriya: 'Men’s wear'
         },
         {
             img:"/imgs/kategoriya3.png",

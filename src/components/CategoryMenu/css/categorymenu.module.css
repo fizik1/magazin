@@ -1,0 +1,43 @@
+.CategoryMenu {
+  margin: auto;
+}
+
+.CategoryMenu h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  padding: 30px;
+}
+
+.CategoryMenu .cards {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+  margin: auto;
+}
+
+@media (max-width: 760px) {
+  .CategoryMenu .cards {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .CategoryMenu .cards {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+/*# sourceMappingURL=categorymenu.module.css.map */

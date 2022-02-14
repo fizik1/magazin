@@ -1,8 +1,8 @@
 import Filter from "../../components/Filter"
 import { Link } from "react-router-dom"
-import CardList from "../../components/CardList"
 import '../../components/css/CategoryPage.css'
 import { useSelector } from "react-redux"
+import CardMenu from "../../components/CardMenu"
 
 
 function CategoryPage({cards}){
@@ -20,7 +20,7 @@ function CategoryPage({cards}){
             </div>
             <div className="asosiy">
                 <Filter />
-                <CardList cards = {data.cards} style={style}/>
+                <CardMenu cards = {data.cards} style={style}/>
             </div>
         </div>
     )

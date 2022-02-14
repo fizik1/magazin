@@ -1,4 +1,4 @@
-import CategoryList from "../../components/CategoryList";
+import CategoryMenu from "../../components/CategoryMenu";
 
 
 
@@ -12,7 +12,7 @@ function Categorys({categorys}){
 
     return(
         <div>
-            <CategoryList title = {title2} style = {style} />
+            <CategoryMenu title = {title2} style = {style} />
         </div>
     )
 }

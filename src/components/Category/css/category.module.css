@@ -30,4 +30,31 @@
   font-size: 25px;
   line-height: 130%;
 }
+
+@media (max-width: 1200px) {
+  .kategoriya {
+    width: 220px;
+  }
+  .kategoriya .title h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 960px) {
+  .kategoriya {
+    width: 160px;
+  }
+  .kategoriya .title h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 540px) {
+  .kategoriya {
+    width: 150px;
+  }
+  .kategoriya .title h4 {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=category.module.css.map */

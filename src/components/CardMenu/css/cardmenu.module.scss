@@ -1,0 +1,29 @@
+
+
+.CardMenu{
+    margin-left: 30px;
+    margin: auto;
+    .title{
+        display: none;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 25px;
+        width: fit-content;
+    }
+}
+
+@media (max-width:1200px){
+    .CardMenu{
+        .items{
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (max-width:900px){
+    .CardMenu{
+        margin-top: 80px;
+    }
+}

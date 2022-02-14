@@ -1,0 +1,33 @@
+.CardMenu {
+  margin-left: 30px;
+  margin: auto;
+}
+
+.CardMenu .title {
+  display: none;
+}
+
+.CardMenu .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 1200px) {
+  .CardMenu .items {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .CardMenu {
+    margin-top: 80px;
+  }
+}
+/*# sourceMappingURL=cardmenu.module.css.map */
