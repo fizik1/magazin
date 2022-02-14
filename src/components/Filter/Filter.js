@@ -6,8 +6,14 @@ import css from './css/filter.module.css'
 
 
 function Filter(){
-
     const [selected, setSelected] = useState(null)
+    const [option, setOption] = useState()
+    const handler = (i) =>{
+        if(option===i){
+            return setOption()
+        }
+        setOption(i)
+    }
 
     const toogle = (i) =>{
         if(selected===i){
@@ -17,10 +23,10 @@ function Filter(){
     }
     return(
         <div className={css.filter}>
-            <div className={css.title} onClick={()=>toogle(10)}>
+            <div className={css.title} onClick={()=>handler(10)}>
                 <h4>Filter</h4>
             </div>
-            <div className={ selected!=10 ? css.accardion : css.accardionShow}>
+            <div className={ option!=10 ? css.accardion : css.accardionShow}>
                 <div className={css.item1}>
                     <div className={css.item1}>
                         <div className={css.title} onClick={()=>toogle(1)}>
