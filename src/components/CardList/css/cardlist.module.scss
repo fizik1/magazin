@@ -62,3 +62,40 @@
         }
     }
 }
+@media (max-width:1200px){
+    .Section3{
+        padding: 0% !important;
+
+        .items{
+            flex-flow: row nowrap;
+            max-width: 100vw;
+            overflow-x: scroll;
+            cursor:grab;
+            &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            }
+            
+            /* Track */
+            &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 6px;
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+            background: #282364; 
+            border-radius: 10px;
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+            background: #0F0D2B; 
+            }
+            &:active{
+                cursor: grabbing;
+            }
+            
+        }
+    }
+}

@@ -46,6 +46,9 @@
 
 .Tovar .content .texts {
   max-width: 560px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .Tovar .content .texts .name h2 {
@@ -60,9 +63,31 @@
           font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
+.Tovar .content .texts .reyting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .Tovar .content .texts .reyting img {
   height: 20px;
   margin-bottom: 10px;
+}
+
+.Tovar .content .texts .reyting p {
+  display: none;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .Tovar .content .texts .info {
@@ -245,5 +270,165 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .Tovar {
+    padding: 50px 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Tovar {
+    padding: 50px 5%;
+  }
+  .Tovar .content .images {
+    width: 430px;
+  }
+  .Tovar .content .images .asosiy {
+    width: 430px;
+    height: 430px;
+  }
+  .Tovar .content .images .qushimcha div {
+    width: 95px;
+    height: 95px;
+  }
+  .Tovar .content .texts {
+    max-width: 450px;
+  }
+  .Tovar .content .texts .name h2 {
+    font-size: 30px;
+  }
+  .Tovar .content .texts .reyting img {
+    height: 17px;
+  }
+  .Tovar .content .texts .info {
+    font-size: 13px;
+  }
+  .Tovar .content .texts .price p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Tovar {
+    padding: 50px 5%;
+  }
+  .Tovar .content .images {
+    width: 400px;
+  }
+  .Tovar .content .images .asosiy {
+    width: 400px;
+    height: 400px;
+  }
+  .Tovar .content .images .qushimcha div {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 920px) {
+  .Tovar .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Tovar .content .images {
+    max-width: 420px;
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 10px;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .Tovar .content .images::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .Tovar .content .images::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+            box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+  }
+  .Tovar .content .images::-webkit-scrollbar-thumb {
+    background: #282364;
+    border-radius: 10px;
+  }
+  .Tovar .content .images::-webkit-scrollbar-thumb:hover {
+    background: #0F0D2B;
+  }
+  .Tovar .content .images:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .Tovar .content .images .asosiy {
+    width: 400px;
+    height: 400px;
+  }
+  .Tovar .content .images .qushimcha div {
+    width: 400px;
+    height: 400px;
+    margin: 0 10px;
+  }
+  .Tovar .content .texts {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .Tovar .content .texts .buttons .korzinkaga, .Tovar .content .texts .buttons .buyNow {
+    width: 100%;
+  }
+  .Tovar .content .texts .afzalliklar .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Tovar .content .texts .afzalliklar .items .item img {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Tovar .content .images {
+    width: 320px;
+  }
+  .Tovar .content .images .asosiy {
+    width: 320px;
+    height: 300px;
+  }
+  .Tovar .content .texts .name h2 {
+    font-size: 24px;
+  }
+  .Tovar .content .texts .reyting {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Tovar .content .texts .reyting img {
+    height: 18px;
+  }
+  .Tovar .content .texts .reyting p {
+    display: block;
+  }
+  .Tovar .content .texts .info {
+    font-size: 14px;
+  }
+  .Tovar .content .texts .price {
+    display: none;
+  }
 }
 /*# sourceMappingURL=product.module.css.map */

@@ -30,6 +30,7 @@
         }
         .texts{
             max-width: 560px;
+            width: fit-content;
             .name{
                 h2{
                     margin-bottom: 20px;
@@ -43,9 +44,22 @@
                 }
             }
             .reyting{
+                display: flex;
+                justify-content: space-between;
                 img{
                     height: 20px;
                     margin-bottom: 10px;
+                }
+                p{
+                    display: none;
+                    margin-bottom: 20px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 140%;
+                    letter-spacing: 0.25px;
+                    font-feature-settings: 'pnum' on, 'lnum' on;
                 }
             }
             .info{
@@ -188,6 +202,183 @@
         .items{
             display: flex;
             justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width:1300px){
+    .Tovar{
+        padding: 50px 5%;
+    }
+}
+@media (max-width:1200px){
+    .Tovar{
+        padding: 50px 5%;
+        .content{
+            .images{
+                width: 430px;
+                .asosiy{
+                    width: 430px;
+                    height: 430px;
+                }
+                .qushimcha{
+                    div{
+                        width: 95px;
+                        height: 95px;
+                    }
+                }
+            }
+            .texts{
+                max-width: 450px;
+                .name{
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+                .reyting{
+                    img{
+                        height: 17px;
+                    }
+
+                }
+                .info{
+                    font-size: 13px;
+                }
+                .price{
+                    p{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    .Tovar{
+        padding: 50px 5%;
+        .content{
+            .images{
+                width: 400px;
+                .asosiy{
+                    width: 400px;
+                    height: 400px;
+                }
+                .qushimcha{
+                    div{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:920px){
+    .Tovar{
+        .content{
+            flex-flow: column;
+            align-items: center;
+            .images{
+                max-width: 420px;
+                overflow-x: scroll;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                &::-webkit-scrollbar {
+                    width: 10px;
+                    height: 10px;
+                    }
+                    
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey; 
+                    border-radius: 6px;
+                    }
+                    
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                    background: #282364; 
+                    border-radius: 10px;
+                    }
+                    
+                    /* Handle on hover */
+                    &::-webkit-scrollbar-thumb:hover {
+                    background: #0F0D2B; 
+                    }
+                    &:active{
+                        cursor: grabbing;
+                    }
+                .asosiy{
+                    width: 400px;
+                    height: 400px;
+                }
+                .qushimcha{
+                    div{
+                        width: 400px;
+                        height: 400px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .texts{
+                max-width: 100%;
+                margin-top: 20px;
+                .buttons{
+                    .korzinkaga, .buyNow{
+                        width: 100%;
+                    }
+                }
+                .afzalliklar{
+                    .items{
+                        flex-flow: column;
+                        .item{
+                            img{
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:425px){
+    .Tovar{
+        .content{
+            .images{
+                width: 320px;
+                .asosiy{
+                    width: 320px;
+                    height: 300px;
+                }
+            }
+            .texts{
+                .name{
+                    h2{
+                        font-size: 24px;
+                    }
+                }
+                .reyting{
+                    align-items: center;
+                    img{
+                        height: 18px;
+                    }
+                    p{
+                        display: block;
+                    }
+                }
+                .info{
+                    font-size: 14px;
+                }
+                .price{
+                    display: none;
+                }
+            }
+
         }
     }
 }

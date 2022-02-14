@@ -57,7 +57,7 @@ function Product(){
                     <h2>Lorem ipsum dolor sit amet</h2>
                 </div>
                 <div className={css.reyting}>
-                    <img src="/imgs/baho.png" alt="" />
+                    <img src="/imgs/baho.png" alt="" /><p>855 у.е.</p>
                 </div>
                 <div className={css.info}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus porttitor rutrum at tellus sodales libero. Eleifend non.</p>

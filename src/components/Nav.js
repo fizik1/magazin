@@ -18,6 +18,7 @@ function Nav(){
         }else navigate('/Basket')
     }
     console.log(state.basket.length);
+    console.log(sstate);
     return(
         <div className={css.nav}>
             <div className={css.bg_black}>
@@ -48,10 +49,10 @@ function Nav(){
                 <div className={sstate?css.none:css.menu}>
                     <button className={css.close} onClick={handlerMenuClose}><img src="/icons/close.png"/></button>
                     <ul>
-                        <li><Link to="/">Главная</Link></li>
-                        <li><Link to="/AboutUs">О нас</Link></li>
-                        <li><Link to="/Categorys">Категории</Link></li>
-                        <li><Link to="/Cooperation">Сотрудничество</Link></li>
+                        <li><Link onClick={()=>{setsstate(true)}} to="/">Главная</Link></li>
+                        <li><Link onClick={()=>{setsstate(true)}} to="/AboutUs">О нас</Link></li>
+                        <li><Link onClick={()=>{setsstate(true)}} to="/Categorys">Категории</Link></li>
+                        <li><Link onClick={()=>{setsstate(true)}} to="/Cooperation">Сотрудничество</Link></li>
                     </ul>
                     <Link to="/Login"><button className={css.kirish_btn}>Войти</button></Link>
                     <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>

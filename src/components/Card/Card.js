@@ -23,9 +23,7 @@ function Card(props){
         }
         let productJson = JSON.stringify(product)
         localStorage.setItem("product", productJson)
-        if(place=="product"){
-            window.location.reload();
-        }else{navigate('/Product')}
+        navigate('/Product')
         
     }
     const handlerBasket=(e)=>{
