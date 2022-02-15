@@ -71,3 +71,16 @@
 
     }
 }
+
+
+@media (max-width:1000px){
+    .Login{
+        .row{
+            .image{
+                img{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
