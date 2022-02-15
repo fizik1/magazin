@@ -8,8 +8,8 @@ import { YMaps, Map } from "react-yandex-maps"
 
 function BizHaqimizda() {
     const style = {
-        width:"700px",
-        height:"500px"
+        width:"100%",
+        height:"90%"
     }
     return (
         <div className={css.BizHaqimizda}>
@@ -30,7 +30,7 @@ function BizHaqimizda() {
             <div className={css.address}>
                 <div className={css.image}>
                     <YMaps>
-                        <Map  style={style} defaultState={{ center: [39.656638, 66.975488], zoom: 12 }} />
+                        <Map style={style} defaultState={{ center: [39.656638, 66.975488], zoom: 12 }} />
                     </YMaps>
                 </div>
                 <div className={css.contents}>

@@ -170,4 +170,64 @@
   color: #0D0D0D;
   border: navajowhite;
 }
+
+@media (max-width: 1200px) {
+  .Hamkorlik {
+    padding: 0 5%;
+  }
+  .Hamkorlik .row .texts .title h4 {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Hamkorlik .row .texts .title h4 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hamkorlik {
+    margin-top: 50px;
+  }
+  .Hamkorlik .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Hamkorlik .row .texts {
+    width: 100%;
+  }
+  .Hamkorlik .row .texts .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Hamkorlik .row .texts .column > div {
+    width: 50%;
+  }
+  .Hamkorlik .row .form {
+    width: 100%;
+  }
+  .Hamkorlik .row .form form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .Hamkorlik .row .texts .title h4 {
+    font-size: 34px;
+  }
+  .Hamkorlik .row .texts .phone .text1, .Hamkorlik .row .texts .address .text1 {
+    font-size: 18px;
+  }
+  .Hamkorlik .row .texts .phone .text2, .Hamkorlik .row .texts .address .text2 {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=cooperation.css.map */

@@ -100,3 +100,86 @@
         }
     }
 }
+
+
+
+@media (max-width:1200px){
+    .Hamkorlik{
+        padding: 0 5%;
+        .row{
+            .texts{
+                .title{
+                    h4{
+                        font-size: 43px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:900px){
+    .Hamkorlik{
+        .row{
+            .texts{
+                .title{
+                    h4{
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .Hamkorlik{
+        margin-top: 50px;
+        .row{
+            flex-flow: column;
+            .texts{
+                width: 100%;
+                .column{
+                    display: flex;
+                    justify-content: space-between;
+                    > div{
+                        width: 50%;
+                    }
+                }
+            }
+            .form{
+                width: 100%;
+                form{
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:450px){
+    .Hamkorlik{
+        .row{
+            .texts{
+                .title{
+                    h4{
+                        font-size: 34px;
+                    }
+                }
+                .phone, .address{
+                    .text1{
+                        font-size: 18px;
+                    }
+                    .text2{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

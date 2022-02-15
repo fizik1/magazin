@@ -125,4 +125,31 @@
           font-feature-settings: 'pnum' on, 'lnum' on;
   color: #0D0D0D;
 }
+
+@media (max-width: 1200px) {
+  .Tulov {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Tulov .row .image img {
+    height: 330px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Tulov .row .image {
+    display: none;
+  }
+  .Tulov .row .form {
+    width: 100%;
+  }
+  .Tulov .row .form form input {
+    width: 100%;
+  }
+  .Tulov .row .form form button {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=payment.css.map */

@@ -44,6 +44,7 @@
                     }
                     .radio{
                         display: flex;
+
                         margin-top: 50px;
                         label{
                             align-items: center;
@@ -109,6 +110,106 @@
             font-feature-settings: 'pnum' on, 'lnum' on;
             margin-top: 50px;
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .Buyurtma{
+        padding: 0 5%;
+        .rasmiylashtiish{
+            .tulov-turi{
+                .row{
+                    .click{
+                        width: 50%;
+                        margin-right: 20px;
+                        .inform{
+                            width: 100%;
+                            
+                        }
+                    }
+                    .fish{
+                        width: 50%;
+                        div{
+                            width: 100%;
+                            input{
+                                width: 100%;
+                            }
+                            button{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:860px){
+    .Buyurtma{
+        .rasmiylashtiish{
+            .tulov-turi{
+                h3{
+                    font-size: 32px;
+                }
+                .row{
+                    .click{
+                        .inform{
+                            .single, .multi{
+                                p{
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                        .radio{
+                            label{
+                                img{
+                                    height: 45px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:700px){
+    .Buyurtma{
+        .rasmiylashtiish{
+            .tulov-turi{
+                h3{
+                    margin-bottom: 20px;
+                }
+                .row{
+                    flex-flow: column;
+                    .click{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        .inform{
+                            .single, .multi{
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .radio{
+                            label{
+                                img{
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                    .fish{
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

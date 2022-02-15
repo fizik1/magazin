@@ -80,3 +80,46 @@
         }
     }
 }
+
+
+@media (max-width:1200px){
+    .Tulov{
+        padding: 0 5%;
+    
+    }
+}
+
+
+@media (max-width:1000px){
+    .Tulov{
+        .row{
+            .image{
+                img{
+                    height: 330px;
+                }
+            }
+        }   
+    }
+}
+
+
+@media (max-width:900px){
+    .Tulov{
+        .row{
+            .image{
+                display: none;
+            }
+            .form{
+                width: 100%;
+                form{
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }   
+    }
+}

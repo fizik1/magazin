@@ -166,4 +166,66 @@
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 1200px) {
+  .Buyurtma {
+    padding: 0 5%;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click {
+    width: 50%;
+    margin-right: 20px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click .inform {
+    width: 100%;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .fish {
+    width: 50%;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .fish div {
+    width: 100%;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .fish div input {
+    width: 100%;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .fish div button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .Buyurtma .rasmiylashtiish .tulov-turi h3 {
+    font-size: 32px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click .inform .single p, .Buyurtma .rasmiylashtiish .tulov-turi .row .click .inform .multi p {
+    font-size: 17px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click .radio label img {
+    height: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Buyurtma .rasmiylashtiish .tulov-turi h3 {
+    margin-bottom: 20px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click .inform .single p, .Buyurtma .rasmiylashtiish .tulov-turi .row .click .inform .multi p {
+    font-size: 14px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .click .radio label img {
+    height: 40px;
+  }
+  .Buyurtma .rasmiylashtiish .tulov-turi .row .fish {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=order.css.map */

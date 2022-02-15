@@ -46,7 +46,7 @@ function Nav(){
                     <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>
                     <button className={css.basket_btn} onClick={navBasket}><img src="icons/basket.png" alt="" /></button>
                 </div>
-                <div className={sstate?css.none:css.menu}>
+                <div className={sstate?css.none:css.menu} onClick={handlerMenuClose}>
                     <button className={css.close} onClick={handlerMenuClose}><img src="/icons/close.png"/></button>
                     <ul>
                         <li><Link onClick={()=>{setsstate(true)}} to="/">Главная</Link></li>

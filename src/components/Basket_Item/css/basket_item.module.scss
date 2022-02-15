@@ -57,7 +57,7 @@
             justify-content: space-between;
             .section{
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 
                 .price{
                     margin-right: 40px;
@@ -116,6 +116,157 @@
                         letter-spacing: 0.15px;
                         font-feature-settings: 'pnum' on, 'lnum' on;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px){
+    .Basket_Item{
+        height: 250px;
+        .contents{
+            .one{
+                h3{
+                    font-size: 20px;
+                }
+                button{
+                    img{
+                        height: 20px;
+                    }
+                }
+            }
+            .two{
+                p{
+                    font-size: 13px;
+                }
+            }
+            .three{
+                .section{
+                    .price{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .size{
+                        h6{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .soni{
+                    button{
+                        img{
+                            height: 30px;
+                        }
+                    }
+                    .count{
+                        width: 80px;
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:760px){
+    .Basket_Item{
+        height: 200px;
+    }
+}
+
+@media (max-width:660px){
+    .Basket_Item{
+        height: 150px;
+        .contents{
+            padding: 5px 7px;
+            .three{
+                height: 30px;
+                .soni{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:560px){
+    .Basket_Item{
+        height: 100px;
+        .contents{
+            padding: 5px 7px;
+            .one{
+                h3{
+                    font-size: 14px;
+                }
+                button{
+                    img{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .two{
+                p{
+                    font-size: 12px;
+                }
+            }
+            .three{
+                height: 25px;
+                .section{
+                    .price{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    .size{
+                        h6, p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .soni{
+                    margin-top: 0;
+                    height: 25px;
+                    button{
+                        img{
+                            height: 25px;
+                        }
+                    }
+                    .count{
+                        width: 60px;
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:425px){
+    .Basket_Item{
+        
+        .contents{
+            justify-content: start;
+            .two{
+                display: none;
+            }
+            .three{
+                flex-flow: column;
+                margin-top: 10px;
+                .section{
+                    justify-content: space-between;
+                }
+                .soni{
+                    width: fit-content;
+                    margin-top: 5px;
                 }
             }
         }
