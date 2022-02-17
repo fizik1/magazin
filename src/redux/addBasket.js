@@ -14,8 +14,7 @@ const basketReduc = (state = initialState, action) => {
             console.log('key:', action.key)
             return state.map((item, index) => index != action.key ? item : {
                 ...item,
-                multiPrice: action.multiPrice,
-                name: "Abdurahmon"
+                multiPrice: action.multiPrice
             })
         default:
             return state;

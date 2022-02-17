@@ -26,7 +26,7 @@ function Filter(){
             <div className={css.title} onClick={()=>handler(10)}>
                 <h4>Filter</h4>
             </div>
-            <div className={ option!=10 ? css.accardion : css.accardionShow}>
+            <div className={`${css.accardion} ${option!=10 ? "": css.accardionShow}`}>
                 <div className={css.item1}>
                     <div className={css.item1}>
                         <div className={css.title} onClick={()=>toogle(1)}>

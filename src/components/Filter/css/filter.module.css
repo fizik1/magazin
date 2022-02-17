@@ -16,14 +16,14 @@
 }
 
 .filter .accardion {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: 0px;
   overflow: hidden;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-delay: 0;
           transition-delay: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .filter .accardion .item1 {
@@ -183,6 +183,10 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
 }
 
 .filter .accardionShow .item1 {
@@ -368,7 +372,18 @@
     border-radius: 6px;
   }
   .filter .accardion {
-    max-height: 0;
+    height: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .filter .accardionShow {
+    height: 250px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
   .filter .button {
     display: none;

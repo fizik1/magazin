@@ -26,18 +26,24 @@
   padding: 0;
 }
 
+.Login .row .image {
+  width: 40%;
+}
+
 .Login .row .image img {
-  height: 390px;
+  width: 100%;
+  height: auto;
 }
 
 .Login .row .contents {
+  width: 55%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .Login .row .contents form {
-  width: 530px;
+  width: 100%;
 }
 
 .Login .row .contents form input {
@@ -89,5 +95,40 @@
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
   color: #0D0D0D;
+}
+
+@media (max-width: 1250px) {
+  .Login .row .image {
+    width: 40%;
+  }
+  .Login .row .image img {
+    width: 100%;
+    height: auto;
+  }
+  .Login .row .contents {
+    width: 55%;
+  }
+  .Login .row .contents form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .Login .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Login .row .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Login .row .contents {
+    width: 100%;
+  }
+  .Login .row .contents form button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=login.module.css.map */

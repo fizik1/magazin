@@ -6,9 +6,9 @@ import { useSelector } from 'react-redux'
 
 function CategoryList({title, style}){
     const {data} = useSelector(state=>state)
-    const item = data.categorys.map((category,key)=>{
+    const item = data.categorys.map((category,index)=>{
         return(
-            <Category category = {category} style = {style}/>
+            <Category key = {index} category = {category} style = {style}/>
         )
     })
     return (

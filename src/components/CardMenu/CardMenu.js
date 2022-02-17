@@ -5,10 +5,9 @@ import css from './css/cardmenu.module.css'
 
 
 function CardMenu(props){
-    console.log(props.basket);
-    const item = props.cards.map((card, key)=>{
+    const item = props.cards.map((card, index)=>{
         return(
-            <Card card = {card} style={props.style} place={props.place}/>
+            <Card key = {index} card = {card} style={props.style} place={props.place}/>
         )
     })
     return(

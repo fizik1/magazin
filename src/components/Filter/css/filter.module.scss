@@ -14,10 +14,11 @@
         }
     }
     .accardion{
-        max-height: fit-content;
+        height: 0px;
         overflow: hidden;
         transition-property: all;
         transition-delay: 0;
+        transition-duration: 0.5s;
         .item1{
             border-top: 1px solid rgba(0, 0, 0, 0.301);
             .item1{
@@ -130,6 +131,8 @@
     }
     .accardionShow{
         height: fit-content;
+        transition-property: all;
+        transition-duration: 2s;
         .item1{
             border-top: 1px solid rgba(0, 0, 0, 0.301);
             .item1{
@@ -269,7 +272,14 @@
         border: 1px solid #DBDEE7;
         border-radius: 6px;
         .accardion{
-            max-height: 0;
+            height: 0;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        .accardionShow{
+            height: 250px;
+            transition-property: all;
+            transition-duration: 0.5s;
         }
         .button{
             display: none;

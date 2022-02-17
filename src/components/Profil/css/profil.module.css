@@ -137,5 +137,59 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+  .Profil .row {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Profil {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .Profil .row .image {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .Profil .row .image img {
+    width: 100%;
+    height: auto;
+  }
+  .Profil .row .image button {
+    width: 100%;
+  }
+  .Profil .row .contents {
+    width: 60%;
+  }
+  .Profil .row .contents label {
+    margin: 0;
+  }
+  .Profil .row .contents label input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Profil .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .Profil .row .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Profil .row .contents {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=profil.module.css.map */

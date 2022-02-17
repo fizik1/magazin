@@ -6,12 +6,10 @@ import {useDispatch, useSelector} from 'react-redux'
 function Card(props){
     const dispatch = useDispatch()
     const state = useSelector(state => state.basket);
-    console.log(props.basket);
     let place = props.place || false
     let navigate = useNavigate();
 
     const handlerNav = ()=>{
-        console.log(card);
         let product = {
             img:card.img,
             nomi: card.nomi,

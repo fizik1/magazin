@@ -10,15 +10,12 @@ function Nav(){
     const [sstate, setsstate] = useState(true);
     const handlerMenuClose=()=>{
         setsstate(true)
-        console.log("salom");
     }
     const navBasket = ()=>{
         if(state.basket.length==0){
             navigate("/NoBasket")
         }else navigate('/Basket')
     }
-    console.log(state.basket.length);
-    console.log(sstate);
     return(
         <div className={css.nav}>
             <div className={css.bg_black}>
@@ -29,9 +26,9 @@ function Nav(){
             </div>
             <div className={css.navbar}>
                 <div className={css.nav1}>
-                    <h1>MILANDI</h1>
+                    <Link to="/"><h1>MILANDI</h1></Link>
                     <button onClick={()=>{setsstate(false)}}><box-icon name='menu'></box-icon></button>
-                    <img src="/imgs/logo.png"/>
+                    <Link to="/"><img src="/imgs/logo.png"/></Link>
                     </div>
                 <div className={css.nav2}>
                     <ul>
