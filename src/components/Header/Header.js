@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import css from './css/face.module.css'
 
 function Header(){
@@ -9,7 +10,7 @@ function Header(){
                     <div className={css.items}>
                         <h3>Быстрый и удобный шоппинг, не выходя из дома.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet quis erat.</p>
-                        <button><img src="imgs/tovarlar-btn.png" alt="" /></button>
+                        <Link to="/Categorys"><img src="imgs/tovarlar-btn.png" alt="" /></Link>
                     </div>
                 </div>
                 <img src="/imgs/model.png" alt="" />
@@ -19,7 +20,7 @@ function Header(){
                     <div className={css.items}>
                         <h3>Быстрый и удобный шоппинг, не выходя из дома.</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus odio vitae, duis nec ut velit, fermentum. Diam sollicitudin arcu euismod morbi. Adipiscing bibendum elementum, fermentum amet quis erat.</p>
-                        <button><img src="imgs/tovarlar-btn.png" alt="" /></button>
+                        <Link to="/Categorys"><img src="imgs/tovarlar-btn.png" alt="" /></Link>
                     </div>
                 </div>
             </div>

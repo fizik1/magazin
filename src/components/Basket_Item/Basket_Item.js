@@ -4,10 +4,9 @@ import {useSelector, useDispatch} from 'react-redux'
 
 function Basket_Item(props) {
     const state = useSelector(state => state)
-    console.log(props.index);
     
     const dispatch = useDispatch()
-    const [count, setCount] = useState(0) 
+    const [count, setCount] = useState(1) 
     let kalit = props.index
     let inform = props.inform
     let product = state.basket[kalit]

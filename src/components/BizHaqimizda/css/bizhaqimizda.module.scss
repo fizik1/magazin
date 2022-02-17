@@ -127,7 +127,7 @@
     .BizHaqimizda{
         
         .asosiy{
-            width: 100vw;
+            width: 100%;
 
             .contents{
                 flex-flow: column-reverse;
@@ -181,7 +181,8 @@
                     line-height: 140%;
                 }
                 .manzillar{
-                    grid-column-gap: 0px;
+                    grid-template-columns: auto;
+                    grid-row-gap: 10px;
                     p{
                         font-size: 14px;
                     }

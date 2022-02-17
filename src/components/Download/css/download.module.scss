@@ -1,7 +1,7 @@
 
 
 .Section5{
-    margin-top: 100px;
+    margin-top: 50px;
     height: 575px;
     display: flex;
     justify-content: end;
@@ -61,41 +61,44 @@
 @media (max-width:1056px){
     .Section5{
         height: 100%;
+        
+
         .blue{
             padding: 0 5%;
             height: 50%;
             flex-flow: column;
             > img{
-                top: -100px;
+                top: -150px;
                 height: auto;
-                width: 50%;
+                width: 70%;
             }
             .items{
                 padding: 0;
                 position: relative;
-                top: -40px;
+                top: -120px;
             }
         }
     }
 }
 
-// @media (max-width:546px){
-//     .Section5{
-//         height: 100%;
-//         .blue{
-//             padding: 0 2%;
-//             height: 50%;
-//             flex-flow: column;
-//             > img{
-//                 top: -100px;
-//                 height: auto;
-//                 width: 50%;
-//             }
-//             .items{
-//                 position: relative;
-//                 top: -40px;
-//                 padding: 0
-//             }
-//         }
-//     }
-// }
+@media (max-width:546px){
+    .Section5{
+        height: 100%;
+        padding-top:80px;
+        .blue{
+            .items{
+                h3{
+                    font-size:24px
+                }
+                .buttons{
+                    button{
+                        img{
+                            width:100%;
+                            height:auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

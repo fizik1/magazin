@@ -83,7 +83,7 @@
     font-size: 17px;
   }
   .row .image {
-    height: 350px;
+    height: auto;
   }
 }
 
@@ -109,7 +109,11 @@
     width: 100%;
   }
   .row .image {
-    width: 330px;
+    width: 100%;
+  }
+  .row .image img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=nobasket.module.css.map */

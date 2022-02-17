@@ -1,4 +1,5 @@
 import css from '../css/footer.module.css'
+import { Link } from "react-router-dom"
 
 function Footer(){
     return(
@@ -29,10 +30,10 @@ function Footer(){
             <div className={css.foot3}>
                 <h4>Меню</h4>
                 <ul>
-                    <li>Главная</li>
-                    <li>О нас</li>
-                    <li>Категории</li>
-                    <li>Сотрудничество</li>
+                    <li><Link to="/" >Главная</Link></li>
+                    <li><Link to="/AboutUs" >О нас</Link></li>
+                    <li><Link to="/Categorys" >Категории</Link></li>
+                    <li><Link to="/Cooperation" >Сотрудничество</Link></li>
                 </ul>
             </div>
             <div className={css.foot4}>
@@ -49,13 +50,10 @@ function Footer(){
             <div className={css.adaptiv}>
                 <h5>High fidelity wireframes include more real content, specific typography choices, and information on image.</h5>
                 <ul>
-                    <li>Catalog</li>
-                    <li>About</li>
-                    <li>Popular</li>
-                    <li>Blog</li>
-                    <li>Pricing</li>
-                    <li>Contacts</li>
-                    <li>Features</li>
+                    <li><Link to="/" >Главная</Link></li>
+                    <li><Link to="/AboutUs" >О нас</Link></li>
+                    <li><Link to="/Categorys" >Категории</Link></li>
+                    <li><Link to="/Cooperation" >Сотрудничество</Link></li>
                 </ul>
                 <div className={css.address}>
                     <div>

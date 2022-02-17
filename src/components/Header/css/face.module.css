@@ -61,12 +61,12 @@
   margin: 30px 0;
 }
 
-.Header .Section1 .bg_black .items button {
+.Header .Section1 .bg_black .items a {
   border: none;
   background-color: transparent;
 }
 
-.Header .Section1 .bg_black .items button img {
+.Header .Section1 .bg_black .items a img {
   height: 20px;
 }
 
@@ -132,12 +132,12 @@
   margin: 30px 0;
 }
 
-.Header .Section2 .bg_white .items button {
+.Header .Section2 .bg_white .items a {
   border: none;
   background-color: transparent;
 }
 
-.Header .Section2 .bg_white .items button img {
+.Header .Section2 .bg_white .items a img {
   height: 20px;
 }
 

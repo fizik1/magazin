@@ -1,5 +1,5 @@
 .Section5 {
-  margin-top: 100px;
+  margin-top: 50px;
   height: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,14 +86,28 @@
             flex-flow: column;
   }
   .Section5 .blue > img {
-    top: -100px;
+    top: -150px;
     height: auto;
-    width: 50%;
+    width: 70%;
   }
   .Section5 .blue .items {
     padding: 0;
     position: relative;
-    top: -40px;
+    top: -120px;
+  }
+}
+
+@media (max-width: 546px) {
+  .Section5 {
+    height: 100%;
+    padding-top: 80px;
+  }
+  .Section5 .blue .items h3 {
+    font-size: 24px;
+  }
+  .Section5 .blue .items .buttons button img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=download.module.css.map */

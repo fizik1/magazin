@@ -214,6 +214,7 @@
             flex-flow: column;
     padding: 36px;
     width: 100%;
+    height: 100vh;
   }
   .nav .navbar .menu .close {
     border: none;

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import css from '../css/nav.module.css'
 import 'boxicons'
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import { useSelector } from "react-redux";
 
 function Nav(){
@@ -16,6 +16,14 @@ function Nav(){
             navigate("/NoBasket")
         }else navigate('/Basket')
     }
+    useEffect(() => {
+        if(sstate){
+            document.body.style.cssText = "overflow: auto;"
+        }
+        else{
+            document.body.style.cssText = "overflow: hidden"
+        }
+    }, [sstate])
     return(
         <div className={css.nav}>
             <div className={css.bg_black}>

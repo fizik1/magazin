@@ -79,7 +79,7 @@
             }
         }
         .image{
-            height: 350px;
+            height:auto;
         }
     }
 }
@@ -100,7 +100,11 @@
             }
         }
         .image{
-            width: 330px;
+            width: 100%;
+            img{
+                width: 100%;
+                height:auto;
+            }
         }
     }
 }

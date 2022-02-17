@@ -142,7 +142,7 @@
 
 @media (max-width: 860px) {
   .BizHaqimizda .asosiy {
-    width: 100vw;
+    width: 100%;
   }
   .BizHaqimizda .asosiy .contents {
     -webkit-box-orient: vertical;
@@ -198,7 +198,9 @@
     line-height: 140%;
   }
   .BizHaqimizda .address .contents .manzillar {
-    grid-column-gap: 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 10px;
   }
   .BizHaqimizda .address .contents .manzillar p {
     font-size: 14px;
