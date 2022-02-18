@@ -16,7 +16,7 @@ function Card(props){
             about:card.about,
             price: card.price,
             id:card.id,
-            multiPrice:0,
+            multiPrice:card.price,
             allPrice:0
         }
         let productJson = JSON.stringify(product)
@@ -31,10 +31,9 @@ function Card(props){
             about:card.about,
             price: card.price,
             id:card.id,
-            multiPrice:0
+            multiPrice:card.price
         }
         dispatch({type:"addBasket", basket_item:product})
-        alert("Magazinga qo'shildi")
         if(place=="basket"){
             navigate("/Basket")
         }

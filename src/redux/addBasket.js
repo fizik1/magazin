@@ -7,14 +7,23 @@ let initialState = []
 const basketReduc = (state = initialState, action) => {
     switch (action.type) {
         case addBasket:
-            return [action.basket_item , ...state]
+            if(state.length==0){ 
+                state.push(action.basket_item);
+            }
+            else if (true) {
+                const add = state.filter(item => item.id === action.basket_item.id)
+                if (add.length == 0) {
+                    state.push(action.basket_item);
+                } 
+            }
+
         case deleteBasket:
             return [...state].filter((item, index) => index !== action.key)
         case spliceBasket:
-            console.log('key:', action.key)
             return state.map((item, index) => index != action.key ? item : {
                 ...item,
-                multiPrice: action.multiPrice
+                multiPrice: action.multiPrice,
+                count: action.count
             })
         default:
             return state;

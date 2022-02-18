@@ -18,13 +18,13 @@ function Basket_Item(props) {
     const handlerPlus=()=>{
         setCount(count + 1)
         let multiPrice = (count+1)*product.price;
-        dispatch({type:"spliceBasket", key:kalit, multiPrice})
+        dispatch({type:"spliceBasket", key:kalit, multiPrice, count})
     }
     const handlerMinus=()=>{
-        if(count>0){
+        if(count>1){
             setCount(count - 1)
             let multiPrice = (count-1)*product.price;
-            dispatch({type:"spliceBasket", key:kalit, multiPrice})
+            dispatch({type:"spliceBasket", key:kalit, multiPrice, count})
         }
     }
 
@@ -53,7 +53,7 @@ function Basket_Item(props) {
                     </div>
                     <div className={css.soni}>
                         <button onClick={handlerMinus}><img src="/icons/minus.png" alt="button" /></button>
-                        <div className={css.count}><p>{count}</p></div>
+                        <div className={css.count}><p>{state.basket[kalit].count || count}</p></div>
                         <button onClick={handlerPlus}><img src="/icons/plus.png" alt="button" /></button>
                     </div>
                 </div>
