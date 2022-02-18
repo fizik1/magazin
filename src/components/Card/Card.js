@@ -1,9 +1,11 @@
 import css from  './css/card.module.css'
 import { useNavigate } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux'
+import { useState } from 'react'
 
 
 function Card(props){
+    const [ pin, setpin ] = useState(false)
     const dispatch = useDispatch()
     const state = useSelector(state => state.basket);
     let place = props.place || false
@@ -37,7 +39,8 @@ function Card(props){
         if(place=="basket"){
             navigate("/Basket")
         }
-        
+        setpin(true)
+        setTimeout(()=>{setpin(false)}, 2000)
     }
     let card = props.card
     return(
@@ -53,6 +56,9 @@ function Card(props){
                     <p>{card.price}</p>
                 </div>
                 <button onClick={(e)=>{handlerBasket(e)}} style={{display:props.style.display}}>Добавить в корзину</button>
+            </div>
+            <div className={pin ? css.alert: css.none}>
+            <p>Savatga qo'shildi</p>
             </div>
         </div>
     )

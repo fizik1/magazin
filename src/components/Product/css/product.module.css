@@ -272,6 +272,67 @@
           justify-content: space-between;
 }
 
+.Tovar .alert {
+  position: fixed;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 80px;
+  right: 50px;
+  padding: 20px;
+  background-color: #ffbf00a6;
+  color: #0d0d0d;
+  border-radius: 5px;
+  -webkit-animation-name: alert;
+          animation-name: alert;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  opacity: 0;
+}
+
+.Tovar .none {
+  display: none;
+}
+
+@-webkit-keyframes alert {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes alert {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 1300px) {
   .Tovar {
     padding: 50px 5%;

@@ -3,14 +3,16 @@ import CategoryList from "../CategoryList/CategoryList"
 import css from './css/product.module.css'
 import {useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
+import { useState } from 'react'
+
 
 
 function Product(){
+    const [ pin, setpin ] = useState(false)
     const {data} = useSelector(state=>state)
     const dispatch = useDispatch()
     let cards = data.cards
     let categorys = data.categorys
-    let navigate = useNavigate()
     let place = "product"
     let productJson = localStorage.getItem('product')
     let product = JSON.parse(productJson)
@@ -29,14 +31,13 @@ function Product(){
             about:card.about,
             price: card.price,
             id:card.id,
-            multiPrice:0
+            multiPrice:card.price
         }
-        dispatch({type:"addBasket", basket_item:product})
-        alert("Magazinga qo'shildi")
-        if(place=="basket"){
-            navigate("/Basket")
-        }
+        dispatch({type:"addBasket", basket_item:product});
+        setpin(true)
+        setTimeout(()=>{setpin(false)}, 2000)
     }
+    console.log(pin);
     let card = product
     return(
         <div className={css.Tovar}>
@@ -108,6 +109,9 @@ function Product(){
         </div>
         <div className={css.top_category}>
             <CategoryList categorys={categorys} title = {title2} style={style}/>
+        </div>
+        <div className={pin ? css.alert: css.none}>
+            <p>Savatga qo'shildi</p>
         </div>
     </div>
     )

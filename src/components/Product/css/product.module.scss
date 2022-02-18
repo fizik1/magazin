@@ -204,6 +204,31 @@
             justify-content: space-between;
         }
     }
+    .alert{
+        position:fixed;
+        width:fit-content;
+        height:fit-content;
+        top: 80px;
+        right: 50px;
+        padding: 20px;
+        background-color: #ffbf00a6;
+        color: #0d0d0d;
+        border-radius: 5px;
+        animation-name: alert;
+        animation-duration:2s;
+        opacity: 0;
+    }
+    .none{
+        display: none;
+    }
+}
+
+@keyframes alert{
+    0%{opacity: 1;}
+    25%{opacity: 1;}
+    50%{opacity: 1;}
+    75%{opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @media (max-width:1300px){
