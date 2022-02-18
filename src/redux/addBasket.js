@@ -13,7 +13,7 @@ const basketReduc = (state = initialState, action) => {
             else if (true) {
                 const add = state.filter(item => item.id === action.basket_item.id)
                 if (add.length == 0) {
-                    state.push(action.basket_item);
+                    state.unshift(action.basket_item);
                 } 
             }
 

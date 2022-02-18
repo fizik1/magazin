@@ -7,7 +7,6 @@ function BasketList(props) {
     let allPrice = 0
     const items =state.basket.map((product, index) => {
         allPrice += Number(product.multiPrice)
-        console.log(index);
             return (
                 <Basket_Item inform={product} index={index} basket={props.basket} />
             )

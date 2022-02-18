@@ -1,4 +1,4 @@
-import css from './css/information.module.css'
+import css from './css/Information.module.css'
 
 function Information(){
 

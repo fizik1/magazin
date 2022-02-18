@@ -10,12 +10,11 @@ import { useState } from 'react'
 function Product(){
     const [ pin, setpin ] = useState(false)
     const {data} = useSelector(state=>state)
+    const {product} = useSelector(state=>state)
     const dispatch = useDispatch()
     let cards = data.cards
     let categorys = data.categorys
     let place = "product"
-    let productJson = localStorage.getItem('product')
-    let product = JSON.parse(productJson)
     let title1 ="Похожие товары",
         title2 = "Лучшие категории",
         style = {
@@ -37,20 +36,19 @@ function Product(){
         setpin(true)
         setTimeout(()=>{setpin(false)}, 2000)
     }
-    console.log(pin);
-    let card = product
+    let card = product[0]
     return(
         <div className={css.Tovar}>
         <div className={css.content}>
             <div className={css.images}>
-                <div className={css.asosiy} style={{backgroundImage:`url("${product.img}")`}}>
+                <div className={css.asosiy} style={{backgroundImage:`url("${card.img}")`}}>
                    
                 </div>
                 <div className={css.qushimcha}>
-                    <div style={{backgroundImage:`url("${product.img}")`}}></div>
-                    <div style={{backgroundImage:`url("${product.img}")`}}></div>
-                    <div style={{backgroundImage:`url("${product.img}")`}}></div>
-                    <div style={{backgroundImage:`url("${product.img}")`}}></div>
+                    <div style={{backgroundImage:`url("${card.img}")`}}></div>
+                    <div style={{backgroundImage:`url("${card.img}")`}}></div>
+                    <div style={{backgroundImage:`url("${card.img}")`}}></div>
+                    <div style={{backgroundImage:`url("${card.img}")`}}></div>
                 </div>
             </div>
             <div className={css.texts}>

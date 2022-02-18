@@ -7,7 +7,6 @@ import { useState } from 'react'
 function Card(props){
     const [ pin, setpin ] = useState(false)
     const dispatch = useDispatch()
-    const state = useSelector(state => state.basket);
     let place = props.place || false
     let navigate = useNavigate();
 
@@ -18,11 +17,9 @@ function Card(props){
             about:card.about,
             price: card.price,
             id:card.id,
-            multiPrice:card.price,
-            allPrice:0
+            multiPrice:card.price
         }
-        let productJson = JSON.stringify(product)
-        localStorage.setItem("product", productJson)
+        dispatch({type:"product", productitem:product})
         navigate('/Product')
         
     }
