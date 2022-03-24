@@ -1,5 +1,7 @@
 import css from "./css/profil.module.css"
+import { useNavigate } from 'react-router-dom'
 function Profil (){
+    const navigate = useNavigate()
     return(
         <div className={css.Profil}>
             <div className={css.row}>
@@ -25,6 +27,7 @@ function Profil (){
                         Адрес
                         <input type="address" name="phone" defaultValue="Ташкент, ул. Янги сергели, д-9, кв-30"/>
                     </label>
+                    <button className="text-red-500 border-2 py-2 border-slate-800 rounded-md" onClick={()=>{navigate('/add')}}>New Product</button>
 
                 </div>
             </div>

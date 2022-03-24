@@ -1,6 +1,8 @@
 import css from "./css/login.module.css"
 import {Link} from "react-router-dom"
 function Login(){
+
+    
     return(
         <div className={css.Login}>
             <div className={css.title}>
@@ -11,7 +13,7 @@ function Login(){
                     <img src="/imgs/login.png"/>
                 </div>
                 <div className={css.contents}>
-                    <form>
+                    <form action="http://localhost:5000/products/add" method="POST">
                         <input type="email" name="email" id="email"/>
                         <label>
                             Пароль

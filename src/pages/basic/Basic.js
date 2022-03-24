@@ -17,6 +17,7 @@ import LoginPage from "../LoginPage";
 import RegistrPage from "../RegistrPage";
 import Nobasket from "../../components/NoBasket";
 import ProfilPage from "../ProfilPage";
+import AddItem from "../../components/addItem";
 
 function Basic(props){
     return(
@@ -36,6 +37,7 @@ function Basic(props){
                 <Route path="/Registr" element={<RegistrPage/>}/>
                 <Route path="/NoBasket" element={<Nobasket/>}/>
                 <Route path="/Profil" element={<ProfilPage/>}/>
+                <Route path='/add' element={<AddItem/>}/>
 
             </Routes>
             <Footer/>
