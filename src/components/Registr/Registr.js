@@ -11,7 +11,7 @@ function Registr(){
                     <img src="/imgs/login.png"/>
                 </div>
                 <div className={css.contents}>
-                    <form>
+                    <form action="/auth/registr" method="post">
                         <input type="text" name="name" id="name" placeholder="Имя"/>
                         <input type="tel" name="phone" id="phone" placeholder="Номер телефона"/>
                         <input type="address" name="address" id="address" placeholder="Адрес"/>
@@ -19,6 +19,7 @@ function Registr(){
                         <label>
                             Пароль
                             <input type="password" name="password" id="password"/>
+                            <input type="password" name="password2" id="password2"/>
                         </label>
                         <button>Войти</button>
                     </form>

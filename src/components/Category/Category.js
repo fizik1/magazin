@@ -6,13 +6,16 @@ function Category({category, style}){
     let navigate = useNavigate();
 
     const handlerNav = ()=>{
-        navigate('/CategoryPage')
+        localStorage.clear()
+        console.log(category.nomi);
+        localStorage.setItem('category',category.nomi )
+        navigate(`/CategoryPage`)
     }
     return(
         <div className={css.kategoriya} onClick={handlerNav}>
             <img src={category.img} alt="kategoriya" />
             <div className={css.title} style={{backgroundColor:style.bgColor}}>
-                <h4 style={{color:style.color}}>{category.kategoriya}</h4>
+                <h4 style={{color:style.color}}>{category.nomi}</h4>
             </div>
         </div>
     )

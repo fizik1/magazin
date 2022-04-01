@@ -3,10 +3,19 @@ import { Link } from "react-router-dom"
 import '../../components/css/CategoryPage.css'
 import { useSelector } from "react-redux"
 import CardMenu from "../../components/CardMenu"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 
-function CategoryPage({cards}){
-    const {data} = useSelector(state=>state)
+function CategoryPage(){
+    const [ cards, setCards ] = useState()
+    useEffect(()=>{
+        axios.get(`/products/category/${localStorage.getItem('category')}`)
+            .then(res=>{
+                console.log(res);
+                setCards(res.data)
+            })
+    } ,[])
     let style = {
         display:"none",
         padding:"0"
@@ -20,7 +29,7 @@ function CategoryPage({cards}){
             </div>
             <div className="asosiy">
                 <Filter />
-                <CardMenu cards = {data.cards} style={style}/>
+                {cards&&<CardMenu cards = {cards} style={style}/>}
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import css from  './css/card.module.css'
 import { useNavigate } from 'react-router-dom';
-import {useDispatch, useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import { useState } from 'react'
 
 
@@ -33,7 +33,7 @@ function Card(props){
             multiPrice:card.price
         }
         dispatch({type:"addBasket", basket_item:product})
-        if(place=="basket"){
+        if(place==="basket"){
             navigate("/Basket")
         }
         setpin(true)

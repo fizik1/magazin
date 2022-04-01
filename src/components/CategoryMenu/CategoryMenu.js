@@ -2,12 +2,21 @@ import css from './css/categorymenu.module.css'
 
 import Category from '../Category'
 import { useSelector } from 'react-redux'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 
 
 function CategoryMenu({title, style}){
-    const {data} = useSelector(state=>state)
-    const item = data.categorys.map((category,index)=>{
+    const [ category, setCategory ] = useState([])
+    useEffect(()=>{
+        axios.get('/category/get')
+            .then(res=>{
+                setCategory(res.data)
+                console.log(res.data);
+            })
+    }, [])
+    const item = category.map((category,index)=>{
         return(
             <Category key = {index} category = {category} style = {style}/>
         )

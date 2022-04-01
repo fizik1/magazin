@@ -1,7 +1,8 @@
 import css from "./css/login.module.css"
 import {Link} from "react-router-dom"
+import {useNavigate} from 'react-router-dom'
 function Login(){
-
+    const navigate = useNavigate()
     
     return(
         <div className={css.Login}>
@@ -13,13 +14,16 @@ function Login(){
                     <img src="/imgs/login.png"/>
                 </div>
                 <div className={css.contents}>
-                    <form action="http://localhost:5000/products/add" method="POST">
+                    <form action="/auth/login" method="POST" onSubmit={(e)=>{
+                        e.preventDefault();
+                        navigate('/')
+                    }}>
                         <input type="email" name="email" id="email"/>
                         <label>
                             Пароль
                             <input type="password" name="password" id="password"/>
                         </label>
-                        <Link to="/Profil"><button>Войти</button></Link>
+                        <input type="submit" value="Войти"/>
                     </form>
                 </div>
             </div>

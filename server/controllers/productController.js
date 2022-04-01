@@ -1,20 +1,13 @@
 const Product = require('../models/productModel')
 
-
-const getProducts = async (req, res)=>{
+const getProductByCategory = async (req, res)=>{
     try {
-        const products = await Product.find({})
-        // console.log(products.length);
-        // for (let i =products.length-1;products.length-i>=1;i--){
-        //     console.log(i);
-        // }
-
+        const products = await Product.find({category:req.params.category})
         res.json(products)
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
-
 
 const addNewProduct = async (req, res)=>{
     try {
@@ -24,13 +17,14 @@ const addNewProduct = async (req, res)=>{
             img: req.body.img,
             price:req.body.price,
             about:req.body.about,
-            multiPrice:req.body.price
+            multiPrice:req.body.price,
+            category:req.body.category
         })
         await newProduct.save((err, productSaved) => {
             if (err) throw err
         })
-        console.log('env is :', process.env);
-        res.redirect(process.env.URL)
+        // console.log('env is :', process.env);
+        res.redirect('http://localhost:3000')
     } catch (error) {
         console.log(error);
     }
@@ -38,5 +32,5 @@ const addNewProduct = async (req, res)=>{
 
 module.exports = {
     addNewProduct,
-    getProducts
+    getProductByCategory
 }

@@ -18,8 +18,16 @@ import RegistrPage from "../RegistrPage";
 import Nobasket from "../../components/NoBasket";
 import ProfilPage from "../ProfilPage";
 import AddItem from "../../components/addItem";
+import AddCategory from "../../components/addCategory";
+import { useEffect, useState } from "react";
 
 function Basic(props){
+    const [ category, setCategory ] = useState('')
+    let yangi = localStorage.getItem('category')
+    useEffect(()=>{
+        setCategory(localStorage.getItem('category'))
+        console.log(localStorage.getItem('category'));
+    }, [])
     return(
        <div className="Basic">
             <Nav/>
@@ -27,7 +35,7 @@ function Basic(props){
                 <Route path="/" element={<Home />}/>
                 <Route path="/AboutUs" element={<AboutUs/>}/>
                 <Route path="/Categorys" element={<Categorys/>}/>
-                <Route path="/CategoryPage" element={<CategoryPage  cards = {props.cards} categorys = {props.categorys}/>}/>
+                <Route path="CategoryPage" element={<CategoryPage  cards = {props.cards} categorys = {props.categorys}/>}/>
                 <Route path="/Product" element={<Product  cards = {props.cards} categorys = {props.categorys}/>}/>
                 <Route path="/Cooperation" element={<Cooperation/>}/>
                 <Route path="/Basket" element={<Basket/>}/>
@@ -38,6 +46,7 @@ function Basic(props){
                 <Route path="/NoBasket" element={<Nobasket/>}/>
                 <Route path="/Profil" element={<ProfilPage/>}/>
                 <Route path='/add' element={<AddItem/>}/>
+                <Route path='/addCategory' element={<AddCategory/>}/>
 
             </Routes>
             <Footer/>

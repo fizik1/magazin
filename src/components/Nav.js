@@ -3,14 +3,25 @@ import css from '../css/nav.module.css'
 import 'boxicons'
 import { useState, useEffect} from 'react'
 import { useSelector } from "react-redux";
+import axios from "axios";
 
 function Nav(){
+    const [ logged, setLogged ] = useState(false)
     const navigate = useNavigate()
     const state = useSelector(state=>state)
     const [sstate, setsstate] = useState(true);
     const handlerMenuClose=()=>{
         setsstate(true)
     }
+
+    useEffect(()=>{
+        axios.get('/auth/user')
+            .then(res=>{
+                setLogged(res.data.isLogged)
+                console.log(logged);
+            })
+    })
+
     const navBasket = ()=>{
         if(state.basket.length==0){
             navigate("/NoBasket")
@@ -24,6 +35,9 @@ function Nav(){
             document.body.style.cssText = "overflow: hidden"
         }
     }, [sstate])
+    const logOut = ()=>{
+        axios.put('/auth/logout')
+    }
     return(
         <div className={css.nav}>
             <div className={css.bg_black}>
@@ -59,8 +73,15 @@ function Nav(){
                         <li><Link onClick={()=>{setsstate(true)}} to="/Categorys">Категории</Link></li>
                         <li><Link onClick={()=>{setsstate(true)}} to="/Cooperation">Сотрудничество</Link></li>
                     </ul>
-                    <Link to="/Login"><button className={css.kirish_btn}>Войти</button></Link>
-                    <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>
+                    {!logged&&
+                    <div>
+                        <Link to="/Login"><button className={css.kirish_btn}>Войти</button></Link>
+                        <Link to="/Registr"><button className={css.registr_btn}>Зарегистрироваться</button></Link>
+                    </div>
+                    }
+                    {logged&&
+                    <Link to="/Registr"><button className={css.registr_btn} onClick={logOut}>Выход</button></Link>
+                    }
 
                 </div>
             </div>

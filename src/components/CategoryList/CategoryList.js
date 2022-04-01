@@ -1,12 +1,10 @@
 import css from './css/categorylist.module.css'
 import Category from '../Category/Category'
-import { useSelector } from 'react-redux'
 
 
 
-function CategoryList({title, style}){
-    const {data} = useSelector(state=>state)
-    const item = data.categorys.map((category,index)=>{
+function CategoryList({title, style, categorys}){
+    const item = categorys.map((category,index)=>{
         return(
             <Category key = {index} category = {category} style = {style}/>
         )

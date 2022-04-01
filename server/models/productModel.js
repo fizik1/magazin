@@ -20,6 +20,10 @@ const productSchema = new Schema({
     multiPrice:{
         type:Number,
         required: true
+    },
+    category:{
+        type:String,
+        required:true
     }
 })
 

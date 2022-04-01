@@ -1,6 +1,14 @@
 import css from "./css/profil.module.css"
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from "react"
+import axios from "axios"
 function Profil (){
+    useEffect(()=>{
+        axios.get('/auth/user')
+            .then(res=>{
+                console.log(res);
+            })
+    }, [])
     const navigate = useNavigate()
     return(
         <div className={css.Profil}>

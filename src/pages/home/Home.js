@@ -5,24 +5,29 @@ import CategoryList from "../../components/CategoryList";
 import Download from "../../components/Download";
 import Information from "../../components/Information";
 import Skidka from "../../components/Skidka";
-import { useSelector } from "react-redux";
 import axios from 'axios'
 import { useEffect, useState } from "react";
 
 
 
 function Home(){
-    const {data} = useSelector(state => state)
     const [ cards, setCards ] = useState(false)
+    const [ category, setCategory ] = useState([])
     useEffect(()=>{
-        axios.get('products/add')
+        axios.get('/category/get')
+            .then(res=>{
+                setCategory(res.data)
+                console.log(res.data);
+            })
+    }, [])
+    useEffect(()=>{
+        axios.get('/home')
         .then(res =>{
             setCards(res.data)
         })
         
     }, [])
-    console.log(data);
-    console.log(cards);
+
     let title1 = 'Лучшие товары',
         title2 = "Категории",
         title3 = "Новые товары";
@@ -36,9 +41,9 @@ function Home(){
             <Header/>
             <Afzalliklarimiz/>
             {cards&&<CardList cards={cards} title = {title1} style={style} />}
-            <CategoryList title = {title2} categorys = {data.categorys} style = {style} />
+            <CategoryList title = {title2} categorys = {category} style = {style} />
             <Download/>
-            <CardList cards={data.cards} title = {title3} style={style} />
+            {cards&&<CardList cards={cards} title = {title3} style={style} />}
             <Information/>
             <Skidka/>
 
