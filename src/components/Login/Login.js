@@ -14,10 +14,7 @@ function Login(){
                     <img src="/imgs/login.png"/>
                 </div>
                 <div className={css.contents}>
-                    <form action="/auth/login" method="POST" onSubmit={(e)=>{
-                        e.preventDefault();
-                        navigate('/')
-                    }}>
+                    <form action="/auth/login" method="POST" >
                         <input type="email" name="email" id="email"/>
                         <label>
                             Пароль

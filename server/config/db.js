@@ -1,4 +1,6 @@
 const dbURL = 'mongodb://localhost:27017/products'
+// const dbURL = "mongodb+srv://shahob:XuCPO0HJkdh1Lhxc@cluster0.ctlsh.mongodb.net/products"
+
 const mongoose = require('mongoose')
 
 const connectDB = async ()=>{
